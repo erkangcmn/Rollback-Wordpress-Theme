@@ -1,0 +1,65 @@
+
+
+
+.navbar{
+    width:25%;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+.baslik{
+    color:black;
+    font-size: 18px;
+
+}
+
+.baslik:hover{
+    color:crimson;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+}
+
+
+
+.contac{
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(36, 33, 33);
+    color:white;
+    text-align: center;
+
+}
+.header{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 8px;
+    margin-top: 10px;
+
+}
+.jumbotron{
+    width: 100%;
+    text-align: center;
+   
+}
+
+
+.sag{
+    float:left;
+ 
+
+}
+
+.slider{
+    width: 100½;
+}
+
+.site{
+    margin:auto;
+    padding: auto;
+}
+.bilgi{
+    width: 90%;
+    margin: auto;
+}
+
