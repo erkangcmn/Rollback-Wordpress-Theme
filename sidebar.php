@@ -1,7 +1,7 @@
 <!-- ========================Sağ================================== -->
 
     <div class="sag" style="float:left;">
-    <div class="container">
+
         <div class="row mt-3" >
             <div class="col-3">
                 <div class="card" style="width: 18rem;">
@@ -17,7 +17,7 @@
         <div class="row mt-5">
             <div class="col-12">    
                 <form class="form-inline">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                   </form>
                 </div>
@@ -53,6 +53,5 @@
         </div>
 
     </div>
-</div>
 </div>
 
