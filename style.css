@@ -1,6 +1,4 @@
 
-
-
 .navbar{
     width:25%;
     text-align: center;
@@ -43,9 +41,12 @@
    
 }
 
+.govde{
+    float: left;
 
+}
 .sag{
-    float:left;
+    float:right;
  
 
 }
@@ -56,7 +57,7 @@
 
 .site{
     margin:auto;
-    padding: auto;
+
 }
 .bilgi{
     width: 90%;

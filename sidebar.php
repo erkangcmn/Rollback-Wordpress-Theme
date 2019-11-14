@@ -1,7 +1,7 @@
 <!-- ========================Sağ================================== -->
 
     <div class="sag" style="float:left;">
-
+    <div class="container">
         <div class="row mt-3" >
             <div class="col-3">
                 <div class="card" style="width: 18rem;">
@@ -15,7 +15,7 @@
         </div>
 <!-- arama butonu -->
         <div class="row mt-5">
-            <div class="col">    
+            <div class="col-12">    
                 <form class="form-inline">
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
@@ -24,8 +24,8 @@
         </div>
 <!-- popüler yazılar-->
 <div class="row mt-2">
-  <div class="col-1"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap" style="width:5rem"></div>
-  <div class="col-2">Burada popüler yazılar veya benim seçtiğim yazılar olacak</div>
+  <div class="col-3"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap" style="width:5rem"></div>
+  <div class="col-9">Burada popüler yazılar veya benim seçtiğim yazılar olacak</div>
 </div>
 <div class="row mt-2">
   <div class="col-3"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap" style="width:5rem"></div>
@@ -53,5 +53,6 @@
         </div>
 
     </div>
+</div>
 </div>
 

@@ -4,6 +4,7 @@ style="
     margin-top:120px;
     width: 100%;
     background-color:rgb(36, 33, 33);
+	float:left:
 
 ">
 

@@ -1,20 +1,12 @@
+<?php get_header(); ?>
 
-
-
-<div class="row">
-  <div class="col-12"><?php get_header(); ?></div>
-
-</div>
 
 <div class="site">
 <div class="row">
-  <div class="col-8 mt-3"> <?php require_once("govde.php"); ?> </div>
-  <div class="col-4 mt-3" ><?php get_sidebar(); ?></div>
+   <?php require_once("govde.php"); ?>
+    <div class="col-4"><?php require_once("sidebar.php"); ?></div>
 </div>
-</div>
+<?php get_footer(); ?>
 
 
-<div class="row">
-  <div class="col-12"><?php get_footer(); ?></div>
-</div>
 
