@@ -1,9 +1,9 @@
 <!-- ========================Sağ================================== -->
 
     <div class="sag" style="float:left;">
-
+<div class="container">
         <div class="row mt-3" >
-            <div class="col-3">
+            <div class="col-12">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap">
                     <div class="card-body">
@@ -14,7 +14,7 @@
                 </div>
         </div>
 <!-- arama butonu -->
-        <div class="row mt-5">
+<div class="row mt-5">
             <div class="col-12">    
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -23,7 +23,7 @@
                 </div>
         </div>
 <!-- popüler yazılar-->
-<div class="row mt-2">
+<div class="row mt-5">
   <div class="col-3"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap" style="width:5rem"></div>
   <div class="col-9">Burada popüler yazılar veya benim seçtiğim yazılar olacak</div>
 </div>
@@ -41,7 +41,7 @@
 </div>
 <!-- Kategoriler -->
 <div class="row mt-3" >
-  <div class="col">
+  <div class="col-12">
       <ul>
         <?php dynamic_sidebar("menu"); ?>
       </ul>
@@ -54,4 +54,5 @@
 
     </div>
 </div>
+
 

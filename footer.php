@@ -1,11 +1,10 @@
 <!-- ========================alt================================== -->
 <div class="alt"
 style="
-    margin-top:120px;
+	margin-top:120px;
+	padding-top:10px;
     width: 100%;
     background-color:rgb(36, 33, 33);
-	float:left:
-
 ">
 
 			<!-- FOOTER -->

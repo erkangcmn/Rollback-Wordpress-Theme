@@ -1,7 +1,7 @@
 
 <!-- ========================GÖVDE================================== -->
 <div class="govde">
-<div class="container" style="width:90% ">
+<div class="container">
 <?php 
 $i=0;
 while(have_posts()) : the_post();
@@ -12,6 +12,7 @@ if($i==0 || $i == 2 || $i == 4 || $i==5){
 }
 $i++;
 ?>
+
 
 <?php 
 if($i > 0 && $i < 5 ){
