@@ -1,4 +1,5 @@
 <!-- ========================alt================================== -->
+
 <div class="alt"
 style="
 	margin-top:120px;
@@ -7,8 +8,8 @@ style="
     background-color:rgb(36, 33, 33);
 ">
 
-			<!-- FOOTER -->
-	<nav id="navigation">		
+	<!-- FOOTER -->
+	<nav id="navigation" >		
 		<footer id="footer">
 			<!-- top footer -->
 			<div class="section">
@@ -17,11 +18,11 @@ style="
 					<!-- row -->
 					<div class="row">
 						<div class="col-md-3 col-xs-6">
-							<div class="footer">
+							<div class="footer" >
 								<h3 class="footer-title">Geri Bildirim İçin</h3>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>Emyo</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>ilanver@gmail.com</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>Gmail</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>Instagram</a></li>
 								</ul>
 							</div>
 						</div>
@@ -30,12 +31,9 @@ style="
 							<div class="footer">
 								<h3 class="footer-title">Kategoriler</h3>
 								<ul class="footer-links">
-									<li><a href="anasayfa.php?ilan_turu=Araba">Araçlar</a></li>
-									<li><a href="anasayfa.php?ilan_turu=Konut">Konutlar</a></li>
-									<li><a href="anasayfa.php?ilan_turu=elektr">Elektronik Eşyalar</a></li>
-									<li><a href="anasayfa.php?ilan_turu=diger">Diğer</a></li>
-									<li><a href="#">İletişim</a></li>
-									<li><a href="#">Hakkımızda</a></li>
+									<li><a href="#">Anasayfa</a></li>
+									<li><a href="#">Hakkımda</a></li>
+									<li><a href="#">Projelerim</a></li>
 								</ul>
 							</div>
 						</div>

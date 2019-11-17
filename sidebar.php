@@ -16,9 +16,9 @@
 <!-- arama butonu -->
 <div class="row mt-5">
             <div class="col-12">    
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                <form class="form-inline" action="sonuc.php" method="GET">
+                    <input class="form-control mr-sm-2" type="search" name="aramasorgusu" placeholder="Ara" aria-label="Search">
+                    <input type="submit" value="Ara">
                   </form>
                 </div>
         </div>

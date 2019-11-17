@@ -39,12 +39,12 @@
               <ul class="navbar-nav">
                   <div class="col">
                   <li class="nav-item active">
-                      <a class="nav-link" href="index.php"><h6 class="baslik">Anasayfa</h6></a>
+                      <a class="nav-link" href="index.php/govde.php"><h6 class="baslik">Anasayfa</h6></a>
                   </li>
                   </div>
                   <div class="col">
                     <li class="nav-item active">
-                      <a class="nav-link" href="cv.php" ><h6 class="baslik">Hakkımda</h6></a>
+                      <a class="nav-link" href="index.php/cv.php" ><h6 class="baslik">Hakkımda</h6></a>
                   </li>
                   </div>
                   <div class="col">

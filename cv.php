@@ -1,7 +1,7 @@
-<?php get_header(); ?>
+
 
 <div class="bilgi">
-    <div class="row">
+    <div class="row mt-3">
         <div class="jumbotron">
             <h6 class="display-4">Hakkımda</h6>
             <hr class="my-4">
@@ -15,7 +15,7 @@
                     
                     Duo te tale tempor posidonium, has dicat insolens maluisset cu. Ne duo graece gubergren disputationi. Vim ei affert impetus scripserit. Vis harum mollis platonem et. Ex quis atqui nec, ad omnes ignota equidem usu.
                     
-                    Novum eruditi ad quo, mundi nominati imperdiet et vix. Utamur percipit antiopam qui ea, te reque animal perfecto has, vero invidunt eos ex. Vis mutat solum sanctus id, ex omnium aliquip pri. Vis no erat noster epicurei.
+                    </p><p>Novum eruditi ad quo, mundi nominati imperdiet et vix. Utamur percipit antiopam qui ea, te reque animal perfecto has, vero invidunt eos ex. Vis mutat solum sanctus id, ex omnium aliquip pri. Vis no erat noster epicurei.
                     
                     At per harum tantas graeco, ne enim virtute explicari quo. Pro id veri omittam. In duis blandit nam. Cu eum noster praesent signiferumque, mandamus suavitate similique et vim.
                     
@@ -33,4 +33,3 @@
         </div>
     </div> 
 </div>
-<?php get_footer(); ?>
