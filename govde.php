@@ -20,8 +20,14 @@ if($i > 0 && $i < 5 ){
 ?>
 
   <div class="col-6">
-    <div class="card" style="width:21rem;margin:auto">
-      <?php if(has_post_thumbnail()) {the_post_thumbnail(array(334));}?>
+    <div class="card" style="margin:auto">
+    <a href="<?php the_permalink(); ?>"><img src="<?php if ( has_post_thumbnail() ) {
+	echo the_post_thumbnail_url();
+}
+else{
+  echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';
+}
+?>" style="width: 340px !important;height:180px !important;padding:1px !important;"/></a>
       <div class="card-body">
         <h5 class="card-title"><?php the_title(); ?></h5>
         <p class="card-text"><?php the_content(); ?></p>
@@ -40,7 +46,13 @@ if($i >=4 && $i <= 6){
 
   <div class="col-12 mt-3">
       <div class="card" style="margin:auto">
-       <?php if(has_post_thumbnail()) {the_post_thumbnail(array(710));}?>
+      <a href="<?php the_permalink(); ?>"><img src="<?php if ( has_post_thumbnail() ) {
+	echo the_post_thumbnail_url();
+}
+else{
+  echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';
+}
+?>" style="width: 716px !important;height:360px !important;padding:1px !important;"/></a>
           <div class="card-body">
             <h5 class="card-title"><?php the_title(); ?></h5>
             <p class="card-text">İlk içerik.</p>
