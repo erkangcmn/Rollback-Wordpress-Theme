@@ -7,7 +7,7 @@ $i=0;
 while(have_posts()) : the_post();
 if($i==0 || $i == 2 || $i == 4 || $i==5){
 ?>
-<div class="row mt-3">
+<div class="row mt-5">
 <?php 
 }
 $i++;
@@ -19,7 +19,7 @@ if($i > 0 && $i < 5 ){
 
 ?>
 
-  <div class="col-6">
+  <div class="col-6 ">
     <div class="card" style="margin:auto">
     <a href="<?php the_permalink(); ?>"><img src="<?php if ( has_post_thumbnail() ) {
 	echo the_post_thumbnail_url();
@@ -27,7 +27,7 @@ if($i > 0 && $i < 5 ){
 else{
   echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';
 }
-?>" style="width: 340px !important;height:180px !important;padding:1px !important;"/></a>
+?>" style="width: 342px !important;height:180px !important"/></a>
       <div class="card-body">
         <h5 class="card-title"><?php the_title(); ?></h5>
         <p class="card-text"><?php the_content(); ?></p>
