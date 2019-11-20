@@ -17,12 +17,12 @@
 
         <ul class="navbar-nav">
             <div class="col">
-            <li class="nav-item active">
-                <a class="nav-link" href="<?php bloginfo('url'); ?>"><h6 class="baslik">Anasayfa</h6></a>
-            </li>
+            <div class="baslik ">
+          <?php if (function_exists(clean_custom_menus())) clean_custom_menus(); ?>
+        </div>
 
             </div>
-            <?php wp_list_pages("title_li=&"); ?> 
+
            
         </ul>
         </nav>
