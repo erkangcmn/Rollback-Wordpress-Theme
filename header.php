@@ -24,11 +24,19 @@
       <div class="row">
               <!-- ============= Contac ================== -->
               <div class="contac"> 
-                WhatsApp
-                Gmail
-                Instagram
+                <div class="col-3"><span>|</span></div>
+
+                <div class="col-6">
+                  <span>Instagram</span>
+                  <span>Twitter</span>
+                  <span>Gmail</span>
+                </div>
+                <div class="col-3"><span>|</span></div>
+
+
               </div>
-            </div> 
+              </div> 
+              
 
       
       
