@@ -1,6 +1,6 @@
 <!-- ========================Sağ================================== -->
 
-    <div class="sag" style="float:left;">
+<div class="sag" style="float:left;">
 <div class="container">
         <div class="row mt-5" >
             <div class="col-12">
@@ -16,8 +16,8 @@
 <!-- arama butonu -->
 <div class="row mt-5">
             <div class="col-12">    
-                <form class="form-inline" action="sonuc.php" method="GET">
-                    <input class="form-control mr-sm-2" type="search" name="aramasorgusu" placeholder="Ara" aria-label="Search">
+                <form role="search" action="search.php" method="post">
+                    <input class=" mr-sm-2" type="search" name="aramasorgusu" placeholder="Ara" aria-label="Search">
                     <input type="submit" value="Ara">
                   </form>
                 </div>
