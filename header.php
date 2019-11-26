@@ -21,17 +21,24 @@
 </head>
 <body>
     <div class="ust">
+    <div class="contac"> 
       <div class="row">
               <!-- ============= Contac ================== -->
-              <div class="contac"> 
-                <div class="col-3"><span>|</span></div>
+              <div class="col-3"></div>
+                <div class="col-1"><span>|</span></div>
 
-                <div class="col-6">
+                <div class="col-4">
                   <span>Instagram</span>
                   <span>Twitter</span>
                   <span>Gmail</span>
                 </div>
-                <div class="col-3"><span>|</span></div>
+                <div class="col-1"><span>|</span></div>
+                <div class="col-3">    
+                <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Ara..." aria-label="Search" style="height:30px;width:160px;">
+      
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="height:30px;">Arama</button>
+    </form></div>
 
 
               </div>

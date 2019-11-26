@@ -1,6 +1,6 @@
 <!-- ========================Sağ================================== -->
 
-<div class="sag" style="float:left;">
+<div class="sag">
 <div class="container">
         <div class="row mt-5" >
             <div class="col-12">

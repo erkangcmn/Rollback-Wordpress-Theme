@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php require_once("slider.php"); ?>
-<div class="site" style="margin:auto">
+<div class="site">
 <div class="row">
     <div class="col-1"></div>
     <div class="col-6" style="float:left"><?php require_once("govde.php"); ?></div>
