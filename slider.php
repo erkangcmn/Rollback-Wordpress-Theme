@@ -31,11 +31,8 @@
     <!-- ========================Slider================================== -->
     <div class="slider">
         <div class="row">
-            <div class="jumbotron">
-                            <h1 class="display-4">Slider Burada Olacak!</h1>
-                            <p class="lead">Blog Sayfamı Kodluyorum.</p>
-                            <hr class="my-4">
-                            <p>Yz Yaz...</p>
-            </div>
+        <?php
+        echo do_shortcode('[smartslider3 slider=5]');
+        ?>
         </div> 
     </div>
