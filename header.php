@@ -31,6 +31,7 @@
                   <span>Instagram</span>
                   <span>Twitter</span>
                   <span>Gmail</span>
+                  <span>Github</span>
                 </div>
                 <div class="col-1"><span>|</span></div>
                 <div class="col-3">    
