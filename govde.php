@@ -14,27 +14,27 @@ endwhile;
 while(have_posts()) : the_post();
 if($j ==1){
 ?>
-<div class="row mt-5">
-<div class="col-sm ">
-    <div class="card" style="margin:auto">
-    <a href="<?php the_permalink(); ?>">
+  <div class="row mt-5">
+  <div class="col-sm ">
+      <div class="card" style="margin:auto">
+      <a href="<?php the_permalink(); ?>">
 
-    <img src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
-        else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
-        style="width: 342px !important;height:180px !important"/></a>
+      <img src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
+          else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
+          style="width: 342px !important;height:180px !important"/></a>
 
-      <div class="card-body">
-        <h5 class="card-title"><?php the_title(); ?></h5>
-        <p class="card-text"><?php the_content(); ?></p>
-        <a href="<?php the_permalink(); ?>" class="btn btn-primary">Devamını oku</a>
+        <div class="card-body">
+          <h5 class="card-title"><?php the_title(); ?></h5>
+          <p class="card-text"><?php the_content(); ?></p>
+          <a href="<?php the_permalink(); ?>" class="btn btn-primary">Devamını oku</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-sm ">
-  </div>
+    <div class="col-sm ">
+    </div>
 
 
-</div>
+  </div>
 
 <?php
 }
@@ -54,7 +54,7 @@ else{
 <?php if($i > 0 && $i < 5 ){ ?>
 
 
-  <div class="col-6 ">
+  <div class="col-6">
     <div class="card" style="margin:auto">
     <a href="<?php the_permalink(); ?>">
 
