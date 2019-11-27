@@ -20,7 +20,7 @@
     </title>
     
 </head>
-<body>
+<body style="background:#f5f5f5">
     <div class="ust">
     <div class="contac"> 
       <div class="row">

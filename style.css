@@ -76,7 +76,23 @@
     margin:auto;
 
 }
+.card img{
+    width: 342px;
+    height:180px ;
+    transition: transform .5s ease-in-out;
+    border-radius: 2px;
 
+
+}
+.card img:hover{
+    transform: scale(1.1);
+    border-radius: 5px;
+
+}
+.card-img-top{
+    width: 286px !important;
+    height:180px ;
+}
 
 .bilgi{
     width: 90%;
@@ -86,7 +102,10 @@
     margin-top:200px;
 }
 
-
+.card{
+    background-color: #ededed !important; 
+    box-shadow: 0 0 4px 0.1px black;
+}
 #navigation{
     color:white;
     margin:30px;

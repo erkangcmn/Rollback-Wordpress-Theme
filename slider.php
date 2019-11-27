@@ -31,9 +31,9 @@
     <!-- ========================Slider================================== -->
     <div class="slider">
         <div class="row">
-         <div class="col-12">
+         <div class="col-12" style="width: 900px !important;">
             <?php
-                echo do_shortcode('[smartslider3 slider=3]');
+                echo do_shortcode('[smartslider3 slider=6]');
             ?> 
             </div> 
         </div> 

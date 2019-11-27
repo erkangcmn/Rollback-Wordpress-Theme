@@ -60,7 +60,7 @@ else{
 
     <img src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
         else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
-        style="width: 342px !important;height:180px !important"/></a>
+        /></a>
 
       <div class="card-body">
         <h5 class="card-title"><?php the_title(); ?></h5>
