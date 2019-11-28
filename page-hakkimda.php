@@ -12,16 +12,13 @@
 
 
 
-
-
-      <h2 class="blog-post-title"><?php the_title(); ?></h2>
+      <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      <h2 class="display-4"><?php the_title(); ?></h2>
       <hr>
-
-
-      <p>
-        <?php the_content(); ?>
-      </p>
-
+        <p class="lead"> <?php the_content(); ?></p>
+      </div>
+    </div>
 
 
 
