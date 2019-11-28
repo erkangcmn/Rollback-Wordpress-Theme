@@ -1,25 +1,18 @@
 
 <?php get_header(); ?>
 
-<?php require_once("slider.php"); ?>
-<div class="site" style="margin:auto">
+
+<div class="site">
 <div class="row">
     <div class="col-1"></div>
-    <div class="col-6"><?php
-    $aramasorgusu = @mysql_real_escape_string($_POST['aramasorgusu']);
-    $sonucsorgu = @mysql_query("SELECT * FROM wp_posts WHERE post_title LIKE '%".$aramasorgusu."%'" );
-    if(@mysql_num_rows($sonucsorgu)>0){
-    while($sorguoku=@mysql_fetch_array($sonucsorgu)){
-    echo $sorguoku['post_title'].'<br>';
-    }
-    }
-    else{
-    echo 'Aradığınız İçerik Bulunamadı';
-    }   
-?></div>
+    <div class="col-6" style="float:left">
+    <h1>"<?php the_search_query(); ?>" için Arama Sonuçları</h1>
+<hr>
+    
+    <?php require_once("govde.php"); ?></div>
 
     <div class="col-1"></div>
-    <div class="col-3"><?php require_once("sidebar.php"); ?></div>
+    <div class="col-4" style="float:right"><?php require_once("sidebar.php"); ?></div>
 </div>
 </div>
 <div class="row">

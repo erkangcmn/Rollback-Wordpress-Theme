@@ -12,6 +12,10 @@ register_sidebar(
 );
 add_theme_support( 'post-thumbnails' );
 
+function tn_custom_excerpt_length( $length ) {
+	return 10;
+	}
+	add_filter( 'excerpt_length', 'tn_custom_excerpt_length', 999 );
 
 
 function register_my_menus() {

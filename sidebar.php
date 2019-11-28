@@ -16,9 +16,9 @@
 <!-- arama butonu -->
 <div class="row mt-5">
             <div class="col-12">    
-                <form role="search" action="search.php" method="post">
-                    <input class=" mr-sm-2" type="search" name="aramasorgusu" placeholder="Ara" aria-label="Search">
-                    <input type="submit" value="Ara">
+                <form role="search"id="searchform" action="<?php echo home_url( '/' ); ?>" method="get">
+                    <input class=" mr-sm-2" type="search" for="s" name="s" id="s"placeholder="Ara" aria-label="Search">
+                    <input type="submit"id="searchform"  value="Ara">
                   </form>
                 </div>
         </div>
