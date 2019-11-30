@@ -12,6 +12,10 @@ endwhile;
 
 
 while(have_posts()) : the_post();
+if($j < 1){
+  echo'İçerik yok';
+  echo $j;
+}
 if($j ==1){
 ?>
 <div class="row mt-5">

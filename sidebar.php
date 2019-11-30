@@ -16,10 +16,10 @@
 <!-- arama butonu -->
 <div class="row mt-5">
             <div class="col-12">    
-                <form role="search"id="searchform" action="<?php echo home_url( '/' ); ?>" method="get">
-                    <input class=" mr-sm-2" type="search" for="s" name="s" id="s"placeholder="Ara" aria-label="Search">
-                    <input type="submit"id="searchform"  value="Ara">
-                  </form>
+            <form action="<?php echo home_url(); ?>" id="search-form" method="get">
+    <input type="text" name="s" id="s" onblur="if(this.value=='')this.value='type your search'" onfocus="if(this.value=='type your search')this.value=''" />
+    <input type="hidden" value="submit" />
+</form>
                 </div>
         </div>
 <!-- popüler yazılar-->

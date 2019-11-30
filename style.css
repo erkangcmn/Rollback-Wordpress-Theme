@@ -10,6 +10,8 @@
 .baslik{
     color:black;
     font-size: 18px;
+    text-decoration-color:#ededed;
+    margin-right: 10px !important;
 
 }/* header menü */ 
 .baslik:hover{

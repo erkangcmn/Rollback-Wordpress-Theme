@@ -18,7 +18,7 @@
         <ul class="navbar-nav">
             <div class="col">
             <div class="baslik ">
-          <?php if (function_exists(clean_custom_menus())) clean_custom_menus(); ?>
+   <?php if (function_exists(header_menus())) header_menus(); ?>
         </div>
 
             </div>
@@ -29,7 +29,7 @@
     </div> 
 </div>
     <!-- ========================Slider================================== -->
-    <div class="slider">
+    <div class="slider mt-2">
         <div class="row">
          <div class="col-12" style="width: 900px !important;">
             <?php
