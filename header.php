@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/style.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/search.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/button.css">
     <?php wp_head(); ?>
     <title>
     <?php

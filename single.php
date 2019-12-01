@@ -20,7 +20,7 @@ else{
 
 
 
-      <h2 class="blog-post-title"><?php the_title(); ?></h2>
+<div class="left-border mt-5"> <h2 class="blog-post-title"><?php the_title(); ?></h2></div>
       <hr>
       <span><?php the_date("d M y"); ?></span>
       <span><?php the_author_posts_link(); ?></span>

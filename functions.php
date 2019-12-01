@@ -22,7 +22,7 @@ function register_my_menus() {
 	register_nav_menus(
 	  array(
 		'header_menu' => __( 'Header Menu' ),
-		'extra-menu' => __( 'Extra Menu' )
+		'404-menu' => __( '404 Menu' )
 	  )
 	);
   }
@@ -40,14 +40,47 @@ function header_menus() {
 		foreach ((array) $menu_items as $key => $menu_item) {
 			$title = $menu_item->title;
 			$url = $menu_item->url;
-			$menu_list .= "<b><a class='baslik' href='$url'>$title </a></b>";
+			$menu_list .= "
+			<div class='col-2'>
+			<div class='submit-wrapper'> 
+			<b><a href='$url'>$title </a>
+			</b>
+			</div>
+			</div>";
+			
 		}
 	} else {
 		// $menu_list = '<!-- no list defined -->';
 	}
-	echo $menu_list;
+	echo "<div class='row mt-5 mb-5'><div class='col-3' ></div>".$menu_list." <div class='col-3' ></div></div>";
 }
 
+/* ------------------404 Menus--------------- */
+function error_menus() {
+	$menu_name = '404-menu'; 
+	if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
+		$menu = wp_get_nav_menu_object($locations[$menu_name]);
+		$menu_items = wp_get_nav_menu_items($menu->term_id);
+
+		$menu_list = "";
+	
+		foreach ((array) $menu_items as $key => $menu_item) {
+			$title = $menu_item->title;
+			$url = $menu_item->url;
+			$menu_list .= "
+			<div class='col-2'>
+			<div class=''> 
+			<b><a href='$url'>$title </a>
+			</b>
+			</div>
+			</div>";
+			
+		}
+	} else {
+		// $menu_list = '<!-- no list defined -->';
+	}
+	echo "<div class='row mt-5 mb-5'><div class='col-3' ></div>".$menu_list." <div class='col-3' ></div></div>";
+}
 
 /* */
 

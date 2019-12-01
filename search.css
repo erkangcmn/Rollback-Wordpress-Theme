@@ -55,6 +55,7 @@
     transition: background-color 0.2s ease-in-out;
   }
 
+
   .search__field::-webkit-input-placeholder {
     position: relative;
     top: 0;
@@ -141,6 +142,9 @@
   }
 
 /*---------*/
-
+.search-icon {
+  margin-top:20px;
+  display: inline-block;
+}
 
 /*Sidebar search*/

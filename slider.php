@@ -12,22 +12,11 @@
 
 
         <!-- =========== Navbar ================== -->
-    <div class="row">
-    <nav class="navbar navbar-expand-md ">
 
-        <ul class="navbar-nav">
-            <div class="col">
-            <div class="baslik ">
+
    <?php if (function_exists(header_menus())) header_menus(); ?>
-        </div>
 
-            </div>
 
-           
-        </ul>
-        </nav>
-    </div> 
-</div>
     <!-- ========================Slider================================== -->
     <div class="slider mt-2">
         <div class="row">
