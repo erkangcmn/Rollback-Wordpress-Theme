@@ -29,23 +29,7 @@
 
                 </div>
         </div>
-<!-- popüler yazılar-->
-<div class="row mt-5">
-  <div class="col-3"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap" style="width:5rem"></div>
-  <div class="col-9">Burada popüler yazılar veya benim seçtiğim yazılar olacak</div>
-</div>
-<div class="row mt-2">
-  <div class="col-3"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap" style="width:5rem"></div>
-  <div class="col-9">Burada popüler yazılar veya benim seçtiğim yazılar olacak</div>
-</div>
-<div class="row mt-2">
-  <div class="col-3"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap" style="width:5rem"></div>
-  <div class="col-9">Burada popüler yazılar veya benim seçtiğim yazılar olacak</div>
-</div>
-<div class="row mt-2">
-  <div class="col-3"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap" style="width:5rem"></div>
-  <div class="col-9">Burada popüler yazılar veya benim seçtiğim yazılar olacak</div>
-</div>
+
 <!-- Kategoriler -->
 <div class="row mt-3" >
   <div class="col-12">

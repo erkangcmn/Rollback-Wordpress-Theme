@@ -7,6 +7,7 @@
     <div class="col-1"></div>
     <div class="col-6 mt-5">
     <?php  while(have_posts()) : the_post();?>
+    <?php setPostViews(get_the_ID()); ?><?php echo getPostViews(get_the_ID()); ?>
 <img src="<?php if ( has_post_thumbnail() ) {
 	echo the_post_thumbnail_url();
 }
