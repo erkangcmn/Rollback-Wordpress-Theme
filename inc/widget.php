@@ -29,13 +29,24 @@ function hstngr_register_widget() {
 	if ( ! empty( $title ) )
 	echo $args['before_title'] . $title . $args['after_title'];
 	//output
-	while(have_posts()) : the_post();
-	echo __( '<div class="row mt-3">
-	<div class="col-3">
-	<img src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap" style="width:5rem"></div>
-	<div class="col-9">'.the_title().'</div>
-	</div>', 'hstngr_widget_domain' );
-	endwhile;
+	query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=5');
+	if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<div class="row mt-3" >
+		<div class="col-4"><a href="<?php the_permalink(); ?>">
+
+<img src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
+else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
+style="width: 150px !important;height:90px !important"/></a></div>
+   <div class="col-8"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+   <?php the_date("d M y"); ?><br>
+   Yazar: <?php the_author_posts_link(); ?> | Görüntülenme: <?php echo getPostViews(get_the_ID()); ?>
+
+   
+   </div></div>
+	<?php
+	endwhile; endif;
+	wp_reset_query();
+
 	echo $args['after_widget'];
 	}
 

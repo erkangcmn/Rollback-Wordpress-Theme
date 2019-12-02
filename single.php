@@ -7,7 +7,7 @@
     <div class="col-1"></div>
     <div class="col-6 mt-5">
     <?php  while(have_posts()) : the_post();?>
-    <?php setPostViews(get_the_ID()); ?><?php echo getPostViews(get_the_ID()); ?>
+
 <img src="<?php if ( has_post_thumbnail() ) {
 	echo the_post_thumbnail_url();
 }
@@ -25,6 +25,8 @@ else{
       <hr>
       <span><?php the_date("d M y"); ?></span>
       <span><?php the_author_posts_link(); ?></span>
+      <span style="float:right">Görüntülenme | <?php setPostViews(get_the_ID()); ?><?php echo getPostViews(get_the_ID()); ?></span>
+      
       <span style="float:right"><?php the_category(", "); ?></span>
       <p>
         <?php the_content(); ?>
@@ -38,6 +40,7 @@ else{
     <div class="yorumlar">
     <?php comments_template();?>
     </div>
+
     <?php endwhile; ?>
 
     </div>

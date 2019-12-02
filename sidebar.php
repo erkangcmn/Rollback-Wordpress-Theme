@@ -1,7 +1,7 @@
 <!-- ========================Sağ================================== -->
 
-<div class="sag">
-<div class="container">
+<div class="sag"style="float:left">
+<div class="container" >
         <div class="row mt-5" >
             <div class="col-12">
                 <div class="card" style="width: 18rem;">
@@ -27,8 +27,13 @@
   
   </form>
 
-                </div>
-        </div>
+    </div>
+</div>
+
+<!-- Trendler -->
+
+
+
 
 <!-- Kategoriler -->
 <div class="row mt-3" >

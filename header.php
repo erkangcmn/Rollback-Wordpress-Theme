@@ -53,6 +53,19 @@
 
               </div>
               </div> 
+                      <!-- =========== Logo ================== -->
+<div class="row">
+        <div class="header"> 
+            <a href="<?php bloginfo('url'); ?>"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/logo.jpg" alt="Erkan Göçmen Blog Sayfası" width="400px"></a>
+            <hr>
+        </div>
+        </div> 
+
+        
+        <!-- =========== Navbar ================== -->
+
+
+   <?php if (function_exists(header_menus())) header_menus(); ?>
               
 
       

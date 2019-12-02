@@ -8,7 +8,7 @@ delete_post_meta($postID, $count_key);
 add_post_meta($postID, $count_key, '0');
 return "0 okunma";
 }
-return $count.' okunma';
+return $count;
 }
 function setPostViews($postID) {
 $count_key = 'post_views_count';

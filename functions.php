@@ -11,7 +11,7 @@ function tn_custom_excerpt_length( $length ) {
 
 	require get_template_directory() . '/inc/sidebar_menus.php';
 
-	require get_template_directory() . '/inc/wiget.php';
+	require get_template_directory() . '/inc/widget.php';
 
 	require get_template_directory() . '/inc/trendler.php';
 ?>
