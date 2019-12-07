@@ -33,8 +33,10 @@
     color: #2b2b2b;
     cursor: default;
   }
-  .search__field:focus ~ .search__icon {
+  .search__wrapper:focus .search__icon {
     border-bottom-color: #ccc;
+    background-color: white;
+    color:white;
     cursor: pointer;
     pointer-events: auto;
   }

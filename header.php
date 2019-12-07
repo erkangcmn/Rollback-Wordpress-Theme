@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
 
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/blog.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/search.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/button.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/social.css">
+
     <?php wp_head(); ?>
     <title>
     <?php
@@ -23,7 +24,6 @@
     
     ?>
     </title>
-    
 </head>
 <body style="background:#f5f5f5">
     <div class="ust">
@@ -55,9 +55,10 @@
               </div>
               </div> 
                       <!-- =========== Logo ================== -->
-<div class="row">
+<div class="row mt-2">
         <div class="header"> 
-            <a href="<?php bloginfo('url'); ?>"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/logo.jpg" alt="Erkan Göçmen Blog Sayfası" width="400px"></a>
+            <a href="<?php bloginfo('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>      
+ 
             <hr>
         </div>
         </div> 

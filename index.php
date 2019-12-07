@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php 
+get_header(); ?>
 
 <?php require_once("slider.php"); ?>
 <div class="site">
@@ -10,6 +11,7 @@
     <div class="col-4" style="float:right"><?php require_once("sidebar.php"); ?></div>
 </div>
 </div>
+
 <div class="row">
 <?php get_footer(); ?>
 </div>

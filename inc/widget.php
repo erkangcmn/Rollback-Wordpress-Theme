@@ -29,20 +29,24 @@ function hstngr_register_widget() {
 	if ( ! empty( $title ) )
 	echo $args['before_title'] . $title . $args['after_title'];
 	//output
-	query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=5');
+	query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=4');
+
+
 	if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<div class="row mt-3" >
-		<div class="col-4"><a href="<?php the_permalink(); ?>">
+	<div class="row mt-3" style="font-family: sans-serif; font-style:normal;font-weight:300" >
 
-<img src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
-else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
-style="width: 150px !important;height:90px !important"/></a></div>
-   <div class="col-8"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-   <?php the_date("d M y"); ?><br>
-   Yazar: <?php the_author_posts_link(); ?> | Görüntülenme: <?php echo getPostViews(get_the_ID()); ?>
+		<div class="col-5"><a href="<?php the_permalink(); ?>">
+			<img src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
+			else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
+			style="width: 130px !important;height:75px !important;border-radius:4px;"/></a>
+		</div>
 
-   
-   </div></div>
+		<div class="col-7"> 
+			<span  style="font-size:16px;font-weight:600"><?php the_title(); ?></span></a><br>
+			<span><?php the_date("j F Y"); ?></span>
+		</div>
+		
+	</div>
 	<?php
 	endwhile; endif;
 	wp_reset_query();

@@ -14,32 +14,41 @@
 else{
   echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';
 }
-?>" style="width: 744px !important;height:350px !important;padding:1px !important;"/>
+?>" style="width: 744px !important;height:350px !important;padding:1px !important; border-radius:5px;"/>
 
 
 
 
 
 
-<div class="left-border mt-5"> <h2 class="blog-post-title"><?php the_title(); ?></h2></div>
+<div class="left-border mt-5"> <h1 class="blog-post-title"><?php the_title(); ?></h1></div>
       <hr>
-      <span><?php the_date("d M y"); ?></span>
-      <span><?php the_author_posts_link(); ?></span>
+      <div style="font-size:14px;">
+      <sspan><img class="img-fluid" src="<?php $user_id = get_the_author_meta('ID');
+            echo get_avatar_url($user_id, 80); ?>" alt="Profile Photo" 
+            style="
+            border-radius: 50% !important;
+            width: 30px;
+            height: 30px;" /></span>
+      <span><?php the_author_posts_link(); ?> | </span>
+      
+      <span style="background:#D3D3D3;padding-left:4px;padding-right:4px;color:black"><b>
+      <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
+
       <span style="float:right">Görüntülenme | <?php setPostViews(get_the_ID()); ?><?php echo getPostViews(get_the_ID()); ?></span>
       
       <span style="float:right"><?php the_category(", "); ?></span>
+      </div>
       <p>
         <?php the_content(); ?>
       </p>
+      <span><?php the_date("d M y"); ?></span>
 
 
 
 
 
 
-    <div class="yorumlar">
-    <?php comments_template();?>
-    </div>
 
     <?php endwhile; ?>
 
@@ -47,7 +56,7 @@ else{
 
 
     <div class="col-1"></div>
-    <div class="col-3"><?php require_once("sidebar.php"); ?></div>
+    <div class="col-4"><?php require_once("sidebar.php"); ?></div>
 </div>
 </div>
 <div class="row">

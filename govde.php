@@ -28,9 +28,9 @@ if($j ==1){
         style="width: 342px !important;height:180px !important"/></a>
 
       <div class="card-body">
-        <h5 class="card-title"><?php the_title(); ?></h5>
+        <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?> </a></span>
         <p class="card-text"><?php the_excerpt(); ?></p>
-        <a href="<?php the_permalink(); ?>" class="btn btn-primary">Devamını oku</a>
+       
       </div>
     </div>
   </div>
@@ -60,16 +60,31 @@ else{
 
   <div class="col-6">
     <div class="card" style="margin:auto">
-    <a href="<?php the_permalink(); ?>">
+    <!-- Düzenlenme Yapılıyor-->
 
-    <img src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
-        else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
-        /></a>
+<span class="picture" style='background-image:url(<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>)'>
+
+      
+
+<div class="pic_transform" >
+        <div class="text_display">
+
+        <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
+        <span style="float:right">Görüntülenme | <?php echo getPostViews(get_the_ID()); ?></span>
+        
+        </div>
+
+    </div>
+</span>
+
+
+<!-- Düzenlenme Yapılıyor-->   
+
 
       <div class="card-body">
-        <h5 class="card-title"><?php the_title(); ?></h5>
+        <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>
         <p class="card-text"><?php the_excerpt(); ?></p>
-        <a href="<?php the_permalink(); ?>" class="btn btn-primary">Devamını oku</a>
+
       </div>
     </div>
   </div>
@@ -87,9 +102,9 @@ else{
           style="width: 716px !important;height:360px !important;padding:1px !important;"/></a>
 
           <div class="card-body">
-            <h5 class="card-title"><?php the_title(); ?></h5>
+            <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>
             <p class="card-text"><?php the_excerpt(); ?></p>
-            <a href="<?php the_permalink(); ?>" class="btn btn-primary">Devamını oku</a>
+
           </div>
         </div>
         </div>
@@ -110,6 +125,13 @@ if($i == 2 || $i == 4 || $i == 5 || $i == 6  ){?>
 
 
 <?php }}} endwhile; ?>
-  
+<?php
+global $wp_query; // you can remove this line if everything works for you
+ 
+// don't display the button if there are not enough posts
+if (  $wp_query->max_num_pages > 1 )
+	echo '<div class="misha_loadmore mt-3">Daha Fazla</div>'; // you can use <a> as well
+?>
+
     </div>
  </div>
