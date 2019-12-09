@@ -129,6 +129,9 @@ if($i == 2 || $i == 4 || $i == 5 || $i == 6  ){?>
 
 
 <?php }}} endwhile; ?>
+<div class="text-center pb-5 col-12">
+          <button type="button" style="display: none;"></button>
+</div>
 <?php
 global $wp_query; // you can remove this line if everything works for you
  

@@ -1,5 +1,5 @@
 <?php
-/* WordPress Eklentisiz Yazı Okunma Sayısı & Popüler Yazıları Gösterme - Webinyo.COM */
+/* WordPress Eklentisiz Yazı Okunma Sayısı & Popüler Yazıları Gösterme - teknozip.COM */
 function getPostViews($postID){
 $count_key = 'post_views_count';
 $count = get_post_meta($postID, $count_key, true);
