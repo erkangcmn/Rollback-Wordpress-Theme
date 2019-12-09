@@ -43,7 +43,7 @@
 <div class="row mt-3" >
   <div class="col-12">
 
-        <?php dynamic_sidebar("menu"); ?>
+        <?php dynamic_sidebar("sidebar"); ?>
 
   </div>
 </div>

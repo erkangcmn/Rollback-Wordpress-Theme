@@ -1,7 +1,6 @@
 
     <?php get_header(); ?>
 
-
 <div class="site" style="margin:auto">
 <div class="row">
     <div class="col-1"></div>
@@ -35,7 +34,7 @@ else{
       <span style="background:#D3D3D3;padding-left:4px;padding-right:4px;color:black"><b>
       <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
 
-      <span style="float:right">Görüntülenme | <?php setPostViews(get_the_ID()); ?><?php echo getPostViews(get_the_ID()); ?></span>
+     <?php setPostViews(get_the_ID()); ?>
       
       <span style="float:right"><?php the_category(", "); ?></span>
       </div>

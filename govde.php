@@ -21,11 +21,17 @@ if($j ==1){
 <div class="row mt-5">
 <div class="col-sm ">
     <div class="card" style="margin:auto">
-    <a href="<?php the_permalink(); ?>">
 
-    <img src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
+    <a href="<?php the_permalink(); ?>">
+    <img class="govde_resim"src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
         else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
-        style="width: 342px !important;height:180px !important"/></a>
+        style="width: 342px !important;height:180px !important"/>
+      </a>
+
+      <div class="test">
+          <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
+          <span style="float:right">Görüntülenme | <?php echo getPostViews(get_the_ID()); ?></span>
+      </div>
 
       <div class="card-body">
         <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?> </a></span>
@@ -60,25 +66,17 @@ else{
 
   <div class="col-6">
     <div class="card" style="margin:auto">
-    <!-- Düzenlenme Yapılıyor-->
-
-<span class="picture" style='background-image:url(<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>)'>
-
-      
-
-<div class="pic_transform" >
-        <div class="text_display">
-
-        <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
-        <span style="float:right">Görüntülenme | <?php echo getPostViews(get_the_ID()); ?></span>
-        
-        </div>
-
-    </div>
-</span>
 
 
-<!-- Düzenlenme Yapılıyor-->   
+    <a href="<?php the_permalink(); ?>">
+    <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
+        else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
+        style="width: 342px !important;height:180px !important"/>
+      </a>
+      <div class="test">
+          <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
+          <span style="float:right">Görüntülenme | <?php echo getPostViews(get_the_ID()); ?></span>
+      </div>
 
 
       <div class="card-body">
@@ -95,11 +93,17 @@ else{
 
   <div class="col-12 mt-3">
       <div class="card" style="margin:auto">
-      <a href="<?php the_permalink(); ?>">
 
-      <img src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); }
-          else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';}?>" 
-          style="width: 716px !important;height:360px !important;padding:1px !important;"/></a>
+      <a href="<?php the_permalink(); ?>">
+        <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); }
+            else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';}?>" 
+            style="width: 716px !important;height:360px !important;padding:1px !important;"/>
+        </a>
+   
+          <div class="test">
+              <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
+             <span style="float:right">Görüntülenme | <?php echo getPostViews(get_the_ID()); ?></span>
+          </div>
 
           <div class="card-body">
             <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>

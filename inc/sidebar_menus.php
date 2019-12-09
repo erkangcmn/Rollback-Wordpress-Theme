@@ -1,8 +1,8 @@
 <?php 
 register_sidebar(
     array(
-        'name' => 'Menu',
-        'id' => 'menu',
+        'name' => 'Sidebar',
+        'id' => 'sidebar',
         'before_widget' => '',
         'after_widget' => '<hr>'
 
@@ -10,4 +10,18 @@ register_sidebar(
         
     )
 );
+
+
+register_sidebar(
+    array(
+        'name' => 'Footer',
+        'id' => 'footer',
+        'before_widget' => ' <div class="col-sm">',
+        'after_widget' => '</div>'
+
+
+        
+    )
+);
+
 ?>
