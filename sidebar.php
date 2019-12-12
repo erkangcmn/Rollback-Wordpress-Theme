@@ -2,17 +2,7 @@
 
 <div class="sag"style="float:left">
 <div class="container" >
-        <div class="row mt-5" >
-            <div class="col-12">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Erkan Göçmen</h5>
-                        <p class="card-text">Sevdiğim yazı veya en popüler yazı burada olacak oleyyy.test uzun yazıda nasıl duruyor burası</p>
-                    </div>
-                    </div>
-                </div>
-        </div>
+
 <!-- arama butonu -->
 <div class="row mt-5">
             <div class="col-12">    

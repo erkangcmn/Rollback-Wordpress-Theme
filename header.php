@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/search.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/button.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/social.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/single.css">
 
 
 
@@ -47,10 +48,11 @@
                 <form class="form-inline"id="searchform" action="<?php echo home_url( '/' ); ?>" method="get">
                     <div class="search__wrapper"> 
                     <input type="search" for="s" name="s" id="s" placeholder="Arama..." class="search__field" />
+    
                     <button type="submit" id="searchform" class="fa fa-search search__icon"></button>
-
+                    </div>
                 </form>
-              </div>
+
                 </div>
 
 

@@ -124,7 +124,10 @@ font-weight:500;
     margin: auto;
 }
 
-
+.card-text{
+    font-size: 17px;
+    font-family: sans-serif;
+}
 .card{
     background-color: #ededed !important; 
     transition: transform .5s ease-in-out;
@@ -148,7 +151,7 @@ font-weight:500;
  padding-left: 10px;
  margin-top: 2px;
  font-weight:500;
- font-size:20px
+ font-size:23px
 }
 .govde_baslik:hover{
     color:black;
@@ -158,7 +161,7 @@ font-weight:500;
     padding-left: 10px;
     margin-top: 2px;
     font-weight:500;
-   font-size:20px
+   font-size:23px
    }
 
 
@@ -206,3 +209,5 @@ font-weight:500;
     margin:100px;
 
 }
+
+

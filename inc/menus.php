@@ -18,23 +18,26 @@ function header_menus() {
 		$menu_items = wp_get_nav_menu_items($menu->term_id);
 
 		$menu_list = "";
-	
+		$i=0;
 		foreach ((array) $menu_items as $key => $menu_item) {
+			$i++;
 			$title = $menu_item->title;
 			$url = $menu_item->url;
 			$menu_list .= "
-			<div class='col-2'>
-			<div class='submit-wrapper'> 
+			
+			<div class='submit-wrapper' style='margin-left:auto'> 
 			<b><a href='$url'>$title </a>
 			</b>
-			</div>
+
 			</div>";
 			
 		}
-	} else {
-		// $menu_list = '<!-- no list defined -->';
-	}
-	echo "<div class='row mt-5 mb-5'><div class='col-3' ></div>".$menu_list." <div class='col-3' ></div></div>";
+	} 
+	
+
+		echo "<div class='row mt-5 mb-5'>".$menu_list."</div>";
+
+
 }
 
 /* ------------------404 Menus--------------- */

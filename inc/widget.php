@@ -43,7 +43,7 @@ function hstngr_register_widget() {
 
 		<div class="col-7"> 
 			<span  style="font-size:16px;font-weight:600"><?php the_title(); ?></span></a><br>
-			<span><?php the_date("j F Y"); ?></span>
+			<span><?php the_time("j F Y"); ?></span>
 		</div>
 		
 	</div>
@@ -162,5 +162,80 @@ function hstngr_register_widget() {
 		}
 		
 		}
+/* ----------------------------------------Hakkımda Kısmı-----------------------------------------------*/
+function about_me() {
+	register_widget( 'about_me_widget' );
+	}
+	
+	add_action( 'widgets_init', 'about_me' );
+	
+	class about_me_widget extends WP_Widget {
+	
+	function __construct() {
+	parent::__construct(
+	// widget ID
+	'about_me_widget',
+	// widget name
+	__('About Me', ' about_me_domain'),
+	// widget description
+	array( 'description' => __( 'Hostinger Widget Tutorial', 'about_me_domain' ), )
+	);
+	}
+
+
+	/* Burada widget’ımızın çıktısını metnini ve kullanıcının belirlediği başlığı gösterecek şekilde ayarladık. */
+	public function widget( $args, $instance ) {
+	$title = apply_filters( 'widget_title', $instance['title'] );
+	echo $args['before_widget'];
+	//if title is present
+	if ( ! empty( $title ) )
+	echo $args['before_title'] . $title . $args['after_title'];
+	//output
+	?>
+	<div class="row mt-3">
+	<div class="col-12">
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="http://localhost/wordpress/wp-content/uploads/2019/10/hack.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Erkan Göçmen</h5>
+					<p class="card-text">Widget tarafından buraya yazı ekleme yapmayı düşünüyorum ne dersin berkay yapılabilir mi? hakkımda kısmı olmasını istiyorum</p>
+				</div>
+				</div>
+			</div>
+	</div>
+	
+	<?php
+
+	echo $args['after_widget'];
+	}
+
+
+	/*Şimdi form() metodunu kullanarak widget’ın arka kısmını programlamalıyız. */
+	public function form( $instance ) {
+	if ( isset( $instance[ 'title' ] ) )
+	$title = $instance[ 'title' ];
+	else
+	$title = __( 'Default Title', 'about_me_domain' );
+	?>
+	<p>
+	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+	</p>
+	<?php
+	}
+
+
+	/*Burada, özel widget’ın nasıl kurulduğunu görebilirsiniz. Kullanıcı bir başlık tanımlamışsa 
+	o başlık bizim oluşturduğumuz HTML formuna eklenir. Aksi takdirde, başlığın adını Varsayılan
+	 Başlık olarak ayarlarız. Widget’ın WordPress yönetici alanında nasıl görüneceği budur.
+	Son olarak, ayarları değiştirdiğinde widget’i yenilemek için güncelleme işlevini uygulamamız gerekir. */
+	public function update( $new_instance, $old_instance ) {
+	$instance = array();
+	$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+	return $instance;
+	}
+	
+	}
+
 
 ?>

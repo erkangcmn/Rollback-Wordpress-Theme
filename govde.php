@@ -12,10 +12,7 @@ endwhile;
 
 
 while(have_posts()) : the_post();
-if($j < 1){
-  echo'İçerik yok';
-  echo $j;
-}
+
 if($j ==1){
 ?>
 <div class="row mt-5">
@@ -73,7 +70,7 @@ else{
         else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
         style="width: 342px !important;height:180px !important"/>
       </a>
-      <div class="test">
+      <div class="test" onselectstart="return false">
           <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
           <span style="float:right">Görüntülenme | <?php echo getPostViews(get_the_ID()); ?></span>
       </div>
@@ -81,7 +78,7 @@ else{
 
       <div class="card-body">
         <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>
-        <p class="card-text"><?php the_excerpt(); ?></p>
+        <p class="card-text"><?php echo excerpt(13); ?></p>
 
       </div>
     </div>
@@ -107,7 +104,7 @@ else{
 
           <div class="card-body">
             <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>
-            <p class="card-text"><?php the_excerpt(); ?></p>
+            <p class="card-text"><?php echo excerpt(30); ?></p>
 
           </div>
         </div>
@@ -117,7 +114,7 @@ else{
 <?php } 
 
 if($j == 3){
-  if($i == 2 || $i == 3)
+  if($i == 2 || $i == 4)
   {
     echo'</div>';
 }}

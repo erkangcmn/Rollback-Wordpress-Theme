@@ -1,0 +1,11 @@
+/* ----------Single.php css---------- */
+
+/*reading time*/
+.reading_time{
+    background:#e2e2e2;
+    padding:5px 8px 5px 8px;
+    color:black;
+    border-radius:9px;
+    font-weight:600;
+    color:#808080
+}

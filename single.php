@@ -20,24 +20,26 @@ else{
 
 
 
-<div class="left-border mt-5"> <h1 class="blog-post-title"><?php the_title(); ?></h1></div>
-      <hr>
-      <div style="font-size:14px;">
-      <sspan><img class="img-fluid" src="<?php $user_id = get_the_author_meta('ID');
+<div style="font-size:14px; margin-top:15px;">
+      <span><img class="img-fluid" src="<?php $user_id = get_the_author_meta('ID');
             echo get_avatar_url($user_id, 80); ?>" alt="Profile Photo" 
             style="
             border-radius: 50% !important;
             width: 30px;
             height: 30px;" /></span>
+          
+
       <span><?php the_author_posts_link(); ?> | </span>
       
-      <span style="background:#D3D3D3;padding-left:4px;padding-right:4px;color:black"><b>
-      <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
+      <span class="reading_time">
+      <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</span>
 
      <?php setPostViews(get_the_ID()); ?>
       
       <span style="float:right"><?php the_category(", "); ?></span>
       </div>
+      <div class="left-border mt-5"> <h1 class="blog-post-title"><?php the_title(); ?></h1></div>
+      <hr>
       <p>
         <?php the_content(); ?>
       </p>
@@ -58,7 +60,7 @@ else{
     <div class="col-4"><?php require_once("sidebar.php"); ?></div>
 </div>
 </div>
-<div class="row">
+<div class="row" style="margin-top:30%">
 <?php get_footer(); ?>
 </div>
    
