@@ -17,7 +17,7 @@ if($j ==1){
 ?>
 <div class="row mt-5">
 <div class="col-sm ">
-    <div class="card" style="margin:auto">
+    <div class="card" style="margin:auto;">
 
     <a href="<?php the_permalink(); ?>">
     <img class="govde_resim"src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
@@ -61,14 +61,13 @@ else{
 <?php if($i > 0 && $i < 5 ){ ?>
 
 
-  <div class="col-6">
-    <div class="card" style="margin:auto">
+  <div class="col-12 col-md-6 col-lg-6">
+    <div class="card" style="margin:auto;height:360px !important">
 
 
     <a href="<?php the_permalink(); ?>">
     <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
-        else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
-        style="width: 342px !important;height:180px !important"/>
+        else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" />
       </a>
       <div class="test" onselectstart="return false">
           <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
@@ -88,13 +87,13 @@ else{
 <?php } if($i >=5 && $i <= 6){?>
 
 
-  <div class="col-12 mt-3">
+  <div class="col-12 col-md-12 col-lg-12 mt-3">
       <div class="card" style="margin:auto">
 
       <a href="<?php the_permalink(); ?>">
         <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); }
             else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';}?>" 
-            style="width: 716px !important;height:360px !important;padding:1px !important;"/>
+             style="width: 100% !important;height:360px !important;padding:1px !important;"/>
         </a>
    
           <div class="test">

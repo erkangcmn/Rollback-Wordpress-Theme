@@ -25,7 +25,7 @@ function header_menus() {
 			$url = $menu_item->url;
 			$menu_list .= "
 			
-			<div class='submit-wrapper' style='margin-left:auto'> 
+			<div class='submit-wrapper' style='margin-left:30px'> 
 			<b><a href='$url'>$title </a>
 			</b>
 
@@ -35,7 +35,7 @@ function header_menus() {
 	} 
 	
 
-		echo "<div class='row mt-5 mb-5'>".$menu_list."</div>";
+		echo "<div class='row mt-5 mb-5 ml-0 mr-0' style='padding-left:auto !important;padding-right:auto !important'>".$menu_list."</div>";
 
 
 }

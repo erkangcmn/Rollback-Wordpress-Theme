@@ -33,46 +33,47 @@
     <div class="contac"> 
       <div class="row">
               <!-- ============= Contac ================== -->
-              <div class="col-3"></div>
-                <div class="col-1"><span>|</span></div>
+              <div class="col-3  d-none d-sm-block"></div>
+                <div class="col-1  d-none d-sm-block"><span>|</span></div>
 
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <span>Instagram</span>
                   <span>Twitter</span>
                   <span>Gmail</span>
                   <span>Github</span>
                 </div>
-                <div class="col-1"><span>|</span></div>
-                <div class="col-3">    
 
-                <form class="form-inline"id="searchform" action="<?php echo home_url( '/' ); ?>" method="get">
-                    <div class="search__wrapper"> 
-                    <input type="search" for="s" name="s" id="s" placeholder="Arama..." class="search__field" />
-    
-                    <button type="submit" id="searchform" class="fa fa-search search__icon"></button>
-                    </div>
-                </form>
+                <div class="col-1  d-none d-sm-block"><span>|</span></div>
 
+                <div class="col-3  d-none d-sm-block">    
+                  <form class="form-inline"id="searchform" action="<?php echo home_url( '/' ); ?>" method="get">
+                      <div class="search__wrapper"> 
+                        <input type="search" for="s" name="s" id="s" placeholder="Arama..." class="search__field" /> 
+                        <button type="submit" id="searchform" class="fa fa-search search__icon"></button>
+                      </div>
+                   </form>
                 </div>
 
 
               </div>
               </div> 
                       <!-- =========== Logo ================== -->
-<div class="row mt-2">
-        <div class="header"> 
-            <a href="<?php bloginfo('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>      
- 
-            <hr>
-        </div>
-        </div> 
+    <div class="row mt-2">
+      <div class="header"> 
+          <a href="<?php bloginfo('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>      
+          <hr>
+      </div>
+    </div> 
 
         
         <!-- =========== Navbar ================== -->
 
-
-   <?php if (function_exists(header_menus())) header_menus(); ?>
-              
+        <div class="row mt-2">
+          <div class="col-12 col-md-12 col-lg-12  d-none d-sm-block" style="margin-left:auto;margin-right:auto">
+              <?php if (function_exists(header_menus())) header_menus(); ?>
+          </div> 
+      </div> 
+            
 
       
       

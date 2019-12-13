@@ -55,27 +55,7 @@ h2,h3,h4,h5,h6{
     margin-left: auto;
     margin-right: auto;
 }
-.header a{
-font-size: 80px;
 
-text-decoration: none;
-font-family: Bahnschrift;
-color: #0e4796;
-padding-left: 10px;
-margin-top: 2px;
-font-weight:500;
-
-}
-.header:hover a{
-    color: #0e4796;
-
-    text-decoration: none;
-    font-family: Bahnschrift;
-    padding-left: 10px;
-    margin-top: 2px;
-    font-weight:500;
-    font-size:80px
-}
 
 
 .jumbotron{
@@ -209,5 +189,61 @@ font-weight:500;
     margin:100px;
 
 }
+@media only screen and (max-width: 600px) {
+    .header a{
+        font-size: 30px;
+        
+        text-decoration: none;
+        font-family: Bahnschrift;
+        color: #0e4796;
+        padding-left: 10px;
+        margin-top: 2px;
+        font-weight:500;
+        
+        }
+        .govde_resim{
+            width: 100% !important;
+            height:360px !important;
+            padding:1px !important;
+        }
+        .card{
+            padding:0px;
+            margin:0px;
+            margin-top:5px;
+            height:100% !important;
+        }
+            
 
 
+}
+
+@media only screen and (min-width: 600px) {
+
+    .header a{
+        font-size: 80px;
+        
+        text-decoration: none;
+        font-family: Bahnschrift;
+        color: #0e4796;
+        padding-left: 10px;
+        margin-top: 2px;
+        font-weight:500;
+        
+        }
+        .header:hover a{
+            color: #0e4796;
+        
+            text-decoration: none;
+            font-family: Bahnschrift;
+            padding-left: 10px;
+            margin-top: 2px;
+            font-weight:500;
+            font-size:80px
+        }
+        .govde_resim{
+            width: 100% !important;
+            height:180px !important;
+            padding:1px !important;
+        }
+
+}

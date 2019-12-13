@@ -41,7 +41,7 @@ if( have_posts() ) :
                 <a href="<?php the_permalink(); ?>">
                     <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); }
                         else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';}?>" 
-                        style="width: 716px !important;height:360px !important;padding:1px !important;"/>
+                        style="width: 100% !important;height:360px !important;padding:1px !important;"/>
                     </a>
     
                     <div class="test">
