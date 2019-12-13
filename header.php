@@ -36,7 +36,7 @@
               <div class="col-3  d-none d-sm-block"></div>
                 <div class="col-1  d-none d-sm-block"><span>|</span></div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" style="width:100%">
                   <span>Instagram</span>
                   <span>Twitter</span>
                   <span>Gmail</span>

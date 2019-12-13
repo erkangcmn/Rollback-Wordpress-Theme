@@ -189,6 +189,9 @@ h2,h3,h4,h5,h6{
     margin:100px;
 
 }
+element .style{
+    width:900px !important;
+}
 @media only screen and (max-width: 600px) {
     .header a{
         font-size: 30px;
@@ -203,15 +206,22 @@ h2,h3,h4,h5,h6{
         }
         .govde_resim{
             width: 100% !important;
-            height:360px !important;
+            height:85% !important;
             padding:1px !important;
+            border-radius:5px;
         }
         .card{
             padding:0px;
-            margin:0px;
-            margin-top:5px;
-            height:100% !important;
+            margin-top:15px;
+            height:90% !important;
         }
+        .govde_resim_buyuk{
+            width: 100% !important;
+            height:85% !important;
+            padding:1px !important;
+            border-radius:5px;
+        }
+
             
 
 
@@ -243,6 +253,11 @@ h2,h3,h4,h5,h6{
         .govde_resim{
             width: 100% !important;
             height:180px !important;
+            padding:1px !important;
+        }
+        .govde_resim_buyuk{
+            width: 100% !important;
+            height:100% !important;
             padding:1px !important;
         }
 

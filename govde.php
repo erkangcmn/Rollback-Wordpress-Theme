@@ -91,9 +91,8 @@ else{
       <div class="card" style="margin:auto">
 
       <a href="<?php the_permalink(); ?>">
-        <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); }
-            else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';}?>" 
-             style="width: 100% !important;height:360px !important;padding:1px !important;"/>
+        <img  class="govde_resim_buyuk" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); }
+            else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';}?>"/>
         </a>
    
           <div class="test">

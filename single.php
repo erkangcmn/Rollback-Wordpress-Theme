@@ -3,8 +3,8 @@
 
 <div class="site" style="margin:auto">
 <div class="row">
-    <div class="col-1"></div>
-    <div class="col-6 mt-5">
+    <div class="d-none d-sm-block col-md-1"></div>
+    <div class="col-12 mt-5 col-md-6 col-lg-4">
     <?php  while(have_posts()) : the_post();?>
 
 <img src="<?php if ( has_post_thumbnail() ) {
@@ -56,8 +56,8 @@ else{
     </div>
 
 
-    <div class="col-1"></div>
-    <div class="col-4"><?php require_once("sidebar.php"); ?></div>
+    <div class="d-none d-sm-block col-md-1"></div>
+    <div class="col-12 col-md-4 col-lg-4"><?php require_once("sidebar.php"); ?></div>
 </div>
 </div>
 <div class="row" style="margin-top:30%">
