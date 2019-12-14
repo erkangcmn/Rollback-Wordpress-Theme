@@ -189,9 +189,15 @@ h2,h3,h4,h5,h6{
     margin:100px;
 
 }
-element .style{
-    width:900px !important;
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+     margin-right: 0px; 
+     margin-left: 0px; 
 }
+
 @media only screen and (max-width: 600px) {
     .header a{
         font-size: 30px;

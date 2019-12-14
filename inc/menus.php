@@ -25,17 +25,15 @@ function header_menus() {
 			$url = $menu_item->url;
 			$menu_list .= "
 			
-			<div class='submit-wrapper' style='margin-left:30px'> 
-			<b><a href='$url'>$title </a>
-			</b>
 
-			</div>";
+			<span class='ml-4'><b><a href='$url'>$title </a></b></span>";
 			
 		}
 	} 
 	
 
-		echo "<div class='row mt-5 mb-5 ml-0 mr-0' style='padding-left:auto !important;padding-right:auto !important'>".$menu_list."</div>";
+		echo "<div class='row mt-5 mb-5 ml-0 mr-0' >
+		<div class=' submit-wrapper col-12 col-md-12 col-lg-12  d-none d-sm-block'>".$menu_list."</div></div>";
 
 
 }

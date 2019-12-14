@@ -46,10 +46,10 @@
                 <div class="col-1  d-none d-sm-block"><span>|</span></div>
 
                 <div class="col-3  d-none d-sm-block">    
-                  <form class="form-inline"id="searchform" action="<?php echo home_url( '/' ); ?>" method="get">
+                  <form class="form-inline" action="<?php echo home_url( '/' ); ?>" method="get">
                       <div class="search__wrapper"> 
-                        <input type="search" for="s" name="s" id="s" placeholder="Arama..." class="search__field" /> 
-                        <button type="submit" id="searchform" class="fa fa-search search__icon"></button>
+                        <input type="search" for="s" name="s" placeholder="Arama..." class="search__field" /> 
+                        <button type="submit" class="fa fa-search search__icon"></button>
                       </div>
                    </form>
                 </div>
@@ -66,13 +66,11 @@
     </div> 
 
         
-        <!-- =========== Navbar ================== -->
+        <!-- =========== Menus ================== -->
 
-        <div class="row mt-2">
-          <div class="col-12 col-md-12 col-lg-12  d-none d-sm-block" style="margin-left:auto;margin-right:auto">
+
               <?php if (function_exists(header_menus())) header_menus(); ?>
-          </div> 
-      </div> 
+
             
 
       

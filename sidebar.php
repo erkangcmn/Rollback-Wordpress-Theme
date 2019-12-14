@@ -7,12 +7,12 @@
 <div class="row mt-5">
             <div class="col-12">    
 
-  <form role="search"id="searchform" action="<?php echo home_url( '/' ); ?>" method="get">
+  <form role="search" action="<?php echo home_url( '/' ); ?>" method="get">
   <div id="custom-search-input">
                 <div class="input-group">
                     <input type="text" class="search-query form-control"for="s" name="s" id="s" placeholder="Arama..." />
                     <span class="input-group-btn">
-                        <button type="submit"id="searchform">
+                        <button type="submit">
                             <span class="fa fa-search"></span>
                         </button>
                     </span>
