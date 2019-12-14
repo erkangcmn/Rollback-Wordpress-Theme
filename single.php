@@ -4,7 +4,7 @@
 <div class="site" style="margin:auto">
 <div class="row">
     <div class="d-none d-sm-block col-md-1"></div>
-    <div class="col-12 mt-5 col-md-6 col-lg-4">
+    <div class="col-12 mt-5 col-md-6 col-lg-6">
     <?php  while(have_posts()) : the_post();?>
 
 <img src="<?php if ( has_post_thumbnail() ) {

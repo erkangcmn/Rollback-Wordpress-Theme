@@ -39,7 +39,7 @@ if( have_posts() ) :
             <div class="card" style="margin:auto">
 
                 <a href="<?php the_permalink(); ?>">
-                    <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); }
+                    <img  class="govde_resim_buyuk" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); }
                         else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';}?>" 
                         style="width: 100% !important;height:360px !important;padding:1px !important;"/>
                     </a>
@@ -64,7 +64,7 @@ if( have_posts() ) :
 
 endif;
 echo'<script>$(document).ready(function(){
-    $(".govde_resim").hover(function(){
+    $(".govde_resim_buyuk").hover(function(){
       $(this).parent().parent().children(".test").css({
         "visibility" : "visible",
         "transition" : ".3s linear",
