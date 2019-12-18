@@ -4,25 +4,7 @@
 <div class="container" >
 
 <!-- arama butonu -->
-<div class="row mt-5">
-            <div class="col-12">    
 
-  <form role="search" action="<?php echo home_url( '/' ); ?>" method="get">
-  <div id="custom-search-input">
-                <div class="input-group">
-                    <input type="text" class="search-query form-control"for="s" name="s" id="s" placeholder="Arama..." />
-                    <span class="input-group-btn">
-                        <button type="submit">
-                            <span class="fa fa-search"></span>
-                        </button>
-                    </span>
-                </div>
-            </div>
-  </form>
-  
-
-    </div>
-</div>
 
 <!-- Trendler -->
 

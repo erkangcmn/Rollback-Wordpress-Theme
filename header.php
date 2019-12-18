@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
 
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/blog.css">
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/search.css">
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/button.css">
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/social.css">
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/blog_sayfam/css/single.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/blog.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/search.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/button.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/social.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/single.css">
 
 
 
@@ -29,6 +28,7 @@
     </title>
 </head>
 <body style="background:#f5f5f5">
+<?php wp_footer();?>
     <div class="ust">
     <div class="contac"> 
       <div class="row">

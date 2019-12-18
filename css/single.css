@@ -9,3 +9,9 @@
     font-weight:600;
     color:#808080
 }
+.bottom-border{
+    border-bottom: 3px rgb(36, 33, 33) solid;
+    padding-bottom: 10px;
+    margin-top: 2px;
+    text-align: center;
+}

@@ -38,10 +38,10 @@ else{
       
       <span style="float:right"><?php the_category(", "); ?></span>
       </div>
-      <div class="left-border mt-5"> <h1 class="blog-post-title"><?php the_title(); ?></h1></div>
-      <hr>
+      <div class="bottom-border mt-5"> <h1 class="blog-post-title"><?php the_title(); ?></h1></div>
       <p>
         <?php the_content(); ?>
+        
       </p>
       <span><?php the_date("d M y"); ?></span>
 
@@ -60,7 +60,10 @@ else{
     <div class="col-12 col-md-4 col-lg-4"><?php require_once("sidebar.php"); ?></div>
 </div>
 </div>
+
+<div class="footer">
 <div class="row" style="margin-top:30%">
 <?php get_footer(); ?>
+</div>
 </div>
    
