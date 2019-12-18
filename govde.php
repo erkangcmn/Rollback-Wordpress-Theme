@@ -32,7 +32,7 @@ if($j ==1){
 
       <div class="card-body">
         <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?> </a></span>
-        <p class="card-text"><?php the_excerpt(); ?></p>
+        <p class="card-text d-none d-sm-block"><?php the_excerpt(); ?></p>
        
       </div>
     </div>

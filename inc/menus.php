@@ -23,17 +23,17 @@ function header_menus() {
 			$i++;
 			$title = $menu_item->title;
 			$url = $menu_item->url;
-			$menu_list .= "
-			
 
-			<span class='ml-4'><b><a href='$url'>$title </a></b></span>";
-			
+			$menu_list .= "<b><a href='$url'>$title </a></b>";
+		
 		}
-	} 
-	
+	} else {
 
-		echo "<div class='row mt-5 mb-5 ml-0 mr-0' >
-		<div class=' submit-wrapper col-12 col-md-12 col-lg-12  d-none d-sm-block'>".$menu_list."</div></div>";
+	}
+
+
+		echo "<div class='row mt-5 mb-5 ml-0 mr-0  d-none d-sm-block' >
+		<div class=' col-sm submit-wrapper' style='padding-left:0 auto;padding-right:0 auto;text-align: center'>".$menu_list."</div></div>";
 
 
 }

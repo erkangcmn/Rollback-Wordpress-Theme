@@ -13,7 +13,7 @@
 else{
   echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';
 }
-?>" style="width: 100% !important;height:350px !important;padding:1px !important; border-radius:5px;"/>
+?>" style="width: 100% !important;height:400px !important;padding:1px !important; border-radius:5px;"/>
 
 
 
