@@ -147,6 +147,7 @@
   margin-top: 10px;
   padding: 0;
   width:20rem;
+
 }
 
 #custom-search-input .search-query {
@@ -155,9 +156,9 @@
   padding-left: 15px;
       /* IE7-8 doesn't have border-radius, so don't indent the padding */
   margin-bottom: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5;
 }
 
 #custom-search-input button {
@@ -170,6 +171,8 @@
   right:0;
   /* IE7-8 doesn't have border-radius, so don't indent the padding */
   margin-bottom: 0;
+  margin-right: 5px;
+  margin-top: 5px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;

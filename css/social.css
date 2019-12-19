@@ -19,9 +19,9 @@
   .soc a {
     position: relative;
 
-    height: 4.6rem;
+    height: 3.6rem;
 
-    width: 4.6rem;
+    width: 3.6rem;
   }
   .soc svg {
     height: 100%;
@@ -38,13 +38,22 @@
     bottom: 0;
     left: 0;
   }
-  
-  .icon-8:hover, .icon-13:hover, .icon-15:hover,.icon-26:hover {
+  .icon-8, .icon-13, .icon-15,.icon-26, .icon-10, .icon-17, .icon-20, .icon-28 {
     border-radius: 100%;
-    color: #0e1a25;
-    fill: #0e1a25;
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
+
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-in;
+    transition: background-color 0.5s, -webkit-transform 0.5s ease-o;
+    transition: background-color 0.5s, transform 0.5s ease-in;
+    transition: background-color 0.5s, transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  
+  .icon-8:hover, .icon-13:hover, .icon-15:hover,.icon-26:hover, .icon-10:hover, .icon-17:hover, .icon-20:hover, .icon-28:hover {
+    border-radius: 100%;
+
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
     transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
     transition: background-color 0.5s, transform 0.5s ease-out;
@@ -74,16 +83,16 @@
   
   
   .icon-15 {
-    fill: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+
+  fill: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
   fill: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   fill: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   
-  
   }
   .icon-15:hover {
-           fill:  white;
-   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  fill:  white;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
@@ -95,7 +104,45 @@
     fill: #00acee ;
   }
   .icon-26:hover {
-           fill:  white;
+    fill:  white;
     background: #00acee ;
   }
+
+  .icon-10 {
+    color: #3b5998;
+    fill: #3b5998;
+  }
+  .icon-10:hover {
+    fill: white;
+    background: #3b5998
+  }
+  
+  .icon-17 {
+    color: #0e76a8;
+    fill: #0e76a8;
+  }
+  .icon-17:hover {
+    fill: white;
+    background: #0e76a8;
+  }
+  
+  .icon-20 {
+    color: #c8232c;
+    fill: #c8232c;
+  }
+  .icon-20:hover {
+    fill: white;
+    background: #c8232c;
+  }
+  
+  
+  .icon-28 {
+    color: #c4302b;
+    fill: #c4302b;
+  }
+  .icon-28:hover {
+    fill: white;
+    background: #c4302b
+  }
+  
   
