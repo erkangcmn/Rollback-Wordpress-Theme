@@ -77,7 +77,7 @@ function footer_menus() {
 			$title = $menu_item->title;
 			$url = $menu_item->url;
 			$menu_list .= "
-			<div class='col-2'>
+			<div class='col-12 col-md-2 col-lg-2'>
 			<li> 
 			<b><a href='$url'>$title </a>
 			</b>

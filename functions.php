@@ -14,6 +14,8 @@ add_theme_support( 'post-thumbnails' );
 
 	require get_template_directory() . '/inc/load_more.php';
 
+	require get_template_directory() . '/inc/about_me.php';
+
 
 function okuma_suresi($content='',$ks=180){
 	$clean_content=strip_shortcodes($content);
@@ -55,6 +57,5 @@ function content($limit) {
 
   return $content;
 }
-
 
 ?>

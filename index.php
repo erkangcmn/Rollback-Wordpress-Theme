@@ -1,3 +1,4 @@
+
 <?php 
 get_header(); ?>
 <?php require_once("slider.php"); ?>
