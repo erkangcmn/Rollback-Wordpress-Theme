@@ -26,6 +26,7 @@ h2,h3,h4,h5,h6{
 }
 
 
+
 .left-border{
     border-left: 4px rgb(36, 33, 33) solid;
     padding-left: 10px;
@@ -50,7 +51,24 @@ h2,h3,h4,h5,h6{
     margin-left: 20px;
 
 }
-
+.rollback_header_social{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-left: 20px;
+    
+}
+.rollback_header_social:hover{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-left: 20px;
+    text-decoration: none;
+}
 .header{
     margin-left: auto;
     margin-right: auto;

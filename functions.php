@@ -15,7 +15,7 @@ function rollback_theme_menu_page(){
 	require(__DIR__).'/admin/rollback-settings.php';
 }
 function rollback_footer_page(){
-	require(__DIR__).'/admin/rollback-footer-page.php';
+	require(__DIR__).'/admin/test.php';
 }
 
 
@@ -37,6 +37,7 @@ add_theme_support( 'post-thumbnails' );
 
 	require get_template_directory() . '/inc/about_me.php';
 
+	require get_template_directory() . '/inc/rollback-admin-func.php';
 
 function okuma_suresi($content='',$ks=180){
 	$clean_content=strip_shortcodes($content);
