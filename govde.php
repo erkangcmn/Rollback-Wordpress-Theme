@@ -27,8 +27,8 @@ if($j ==1){
       </a>
 
       <div class="test">
-          <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
-          <span style="float:right">Görüntülenme | <?php echo getPostViews(get_the_ID()); ?></span>
+         <span class="fa fa-comment"> 5 | </span>
+         <span class="fa fa-eye" style="font-size:20px" aria-hidden="true"> <?php echo getPostViews(get_the_ID()); ?></span>
       </div>
 
       <div class="card-body">
@@ -63,22 +63,22 @@ else{
 
 
   <div class="col-12 col-md-6 col-lg-6">
-    <div class="card" style="margin:auto;height:360px !important">
+    <div class="card" style="margin:auto;height:100%;">
 
 
     <a href="<?php the_permalink(); ?>">
     <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
         else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" />
       </a>
-      <div class="test" onselectstart="return false">
-          <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
-          <span style="float:right">Görüntülenme | <?php echo getPostViews(get_the_ID()); ?></span>
+      <div class="test">
+        <span class="fa fa-comment"> 5 | </span>
+        <span class="fa fa-eye" style="font-size:20px" aria-hidden="true"> <?php echo getPostViews(get_the_ID()); ?></span>
       </div>
 
 
       <div class="card-body">
         <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>
-        <p class="card-text"><?php echo excerpt(13); ?></p>
+        <p class="card-text" ><?php echo excerpt(13); ?></p>
 
       </div>
     </div>
@@ -97,8 +97,8 @@ else{
         </a>
    
           <div class="test">
-              <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
-             <span style="float:right">Görüntülenme | <?php echo getPostViews(get_the_ID()); ?></span>
+            <span class="fa fa-comment"> 5 | </span>
+            <span class="fa fa-eye" style="font-size:20px" aria-hidden="true"> <?php echo getPostViews(get_the_ID()); ?></span>
           </div>
 
           <div class="card-body">

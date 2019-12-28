@@ -44,8 +44,8 @@ if( have_posts() ) :
                     </a>
     
                     <div class="test">
-                        <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</b></span>
-                        <span style="float:right">Görüntülenme | <?php echo getPostViews(get_the_ID()); ?></span>
+                        <span class="fa fa-comment"> 5 | </span>
+                        <span class="fa fa-eye" style="font-size:20px" aria-hidden="true"> <?php echo getPostViews(get_the_ID()); ?></span>
                     </div>
 
                 <div class="card-body">
@@ -65,6 +65,11 @@ endif;
 echo'<script>$(document).ready(function(){
     $(".govde_resim_buyuk").hover(function(){
       $(this).parent().parent().children(".test").css({
+        "-webkit-user-select": "none", 
+        "-webkit-touch-callout": "none", 
+        "-moz-user-select": "none", 
+        "-ms-user-select": "none", 
+        "user-select":"none",
         "visibility" : "visible",
         "transition" : ".3s linear",
         "opacity" : "1",
@@ -76,6 +81,11 @@ echo'<script>$(document).ready(function(){
         "color":"white"})
       }, function(){
       $(this).parent().parent().children(".test").css({
+        "-webkit-user-select": "none", 
+        "-webkit-touch-callout": "none", 
+        "-moz-user-select": "none", 
+        "-ms-user-select": "none", 
+        "user-select":"none",
         "visibility" : "hidden", 
         "transition" : ".3s linear", 
         "opacity" : "0",
@@ -84,7 +94,8 @@ echo'<script>$(document).ready(function(){
         })
         
     });
-  });</script>';
+  });
+</script>';
 die;
 }
 

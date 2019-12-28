@@ -25,6 +25,7 @@ h2,h3,h4,h5,h6{
     padding: auto;
 }
 
+
 .left-border{
     border-left: 4px rgb(36, 33, 33) solid;
     padding-left: 10px;
@@ -171,6 +172,11 @@ h2,h3,h4,h5,h6{
     visibility: hidden;
     width: 700;
     height: 700;
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;    
 }
 .footer_name a{
     font-size: 40px;
