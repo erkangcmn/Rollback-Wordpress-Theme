@@ -18,6 +18,22 @@ h2,h3,h4,h5,h6{
     font-weight:500
 
 }
+/* ====== header =====*/
+.fa {
+    color: #808080;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    color: white;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
 .navbar{
     width:25%;
     text-align: center;
@@ -25,6 +41,7 @@ h2,h3,h4,h5,h6{
     padding: auto;
 }
 
+/* ====== header =====*/
 
 
 .left-border{

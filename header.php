@@ -37,10 +37,10 @@
                 <div class="col-1  d-none d-sm-block"><span>|</span></div>
 
                 <div class="col-12 col-md-4" style="width:100%">
-                <?php if(get_option('wayne_footer_social_media_facebook') == '#' || trim(get_option('wayne_footer_social_media_facebook')) == ''){}
+                <?php if(get_option('rollback_social_media_facebook') == '#' || trim(get_option('rollback_social_media_facebook')) == ''){}
                 else{
                 ?>
-                <a href="<?php get_option('wayne_footer_social_media_facebook'); ?>" class="rollback_header_social">Facebook</a>
+                <a href="<?php echo get_option('rollback_social_media_facebook'); ?> "target=" _blank" class="rollback_header_social"><i class="fa fa-facebook"></i></i></a>
                 <?php }?>
                   <span>Instagram</span>
                   <span>Twitter</span>
