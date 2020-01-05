@@ -250,7 +250,10 @@ jQuery.post(
 });
 /* ============== YouTube ========== */
 
+$('.updated_true').on('click', function(){
+  alert("Alert Message","Alert Title")
 
+});
 </script>
 
 

@@ -9,8 +9,8 @@
         <div class="row">
          <div class="col-12" style="width: 900px !important;">
             <?php
-                echo do_shortcode('[smartslider3 slider=6]');
-            ?> 
+                echo do_shortcode('[smartslider3 slider=7]');
+            ?>
             </div> 
         </div> 
     </div>

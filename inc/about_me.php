@@ -22,7 +22,7 @@ function ctUp_ads_widget() {
 add_action('admin_enqueue_scripts', 'ctup_wdscript');
 function ctup_wdscript() {
     wp_enqueue_media();
-    wp_enqueue_script('ads_script', get_template_directory_uri() . '/js/widget.js', false, '1.0.0', true);
+
 }
 
 // Widget
@@ -76,7 +76,10 @@ class ctUp_ads extends WP_Widget {
         else
         $detail = __( 'About Me Detail', 'about_me_domain' );
 
-
+        if ( isset( $instance[ 'image_uri' ] ) )
+        $image_url = $instance[ 'image_uri' ];
+        else
+        $image_url = __( '', 'about_me_domain' );
 ?>
 	<p>
     <!-- ======About Me Title =====-->
@@ -88,10 +91,10 @@ class ctUp_ads extends WP_Widget {
 	
 	</p>
     <p>
-        <label for="<?= $this->get_field_id( 'image_uri' ); ?>">Image</label>
-        <img class="<?= $this->id ?>_img" src="<?= (!empty($instance['image_uri'])) ? $instance['image_uri'] : ''; ?>" style="margin:0;padding:0;max-width:100%;display:block"/>
-        <input type="text" class="widefat <?= $this->id ?>_url" name="<?= $this->get_field_name( 'image_uri' ); ?>" value="<?= $instance['image_uri']; ?>" style="margin-top:5px;" />
-        <input type="button" id="<?= $this->id ?>" class="button button-primary js_custom_upload_media" value="Upload Image" style="margin-top:5px;" />
+    <label for="<?php echo $this->get_field_id( 'image_uri' ); ?>"><?php _e( 'Image:' ); ?></label>
+    <img class="<?= $this->id ?>_img" type="file" src="<?= (!empty($image_url)) ? $image_url : ''; ?>" style="margin:0;padding:0;max-width:100%;display:block"/>
+    <input type="text" class="widefat <?= $this->id ?>_url" name="<?= $this->get_field_name( 'image_uri' ); ?>" value="<?php echo esc_attr( $image_url); ?>" style="margin-top:5px;" />
+    <input type="button" id="<?= $this->id ?>" class="button button-primary js_custom_upload_media" value="Upload Image" style="margin-top:5px;" />
     </p>
 
 <?php
@@ -104,7 +107,7 @@ echo"<script>jQuery(document).ready(function ($) {
         wp.media.editor.send.attachment = function (props, attachment) {
           if (_custom_media) {
             $('.' + button_id + '_img').attr('src', attachment.url);
-            $('.' + button_id + '_url').val(attachment.url);
+            $('.' + button_id + '_url').val(attachment.url).trigger('change');
           } else {
             return _orig_send_attachment.apply($('#' + button_id), [props, attachment]);
           }

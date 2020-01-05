@@ -21,9 +21,8 @@ if($j ==1){
     <div class="card" style="margin:auto;">
 
     <a href="<?php the_permalink(); ?>">
-    <img class="govde_resim"src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
-        else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
-        style="width: 342px !important;height:180px !important"/>
+    <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
+        else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" />
       </a>
 
       <div class="test">
@@ -34,7 +33,7 @@ if($j ==1){
 
       <div class="card-body">
         <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?> </a></span>
-        <p class="card-text d-none d-sm-block"><?php the_excerpt(); ?></p>
+        <p class="card-text" ><?php echo excerpt(13); ?></p>
        
       </div>
     </div>
