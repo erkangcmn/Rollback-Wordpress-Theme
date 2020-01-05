@@ -1,19 +1,26 @@
 <!-- ========================alt================================== -->
 <div class="container">
 <div class="row">
+
+<?php if(get_option('blog_name_footer_widgets') == 'enable'){?>
 <div class="col-sm col-md-sm col-lg-sm">
 	<div class="footer_name">
 
-
-				<a href="<?php bloginfo('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>  
-			</div>    
-		</div>
-
-  <?php dynamic_sidebar("footer"); ?>
+	<a href="<?php bloginfo('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>  
+	
+	</div>    
+</div>
+<?php } ?>
+<?php dynamic_sidebar("footer"); ?>
 </div>
 <div class="row">
 <div class="col-12 mt-5">
-<p style="text-align:center;">Erkan Göçmen 2019 </p>
+<?php
+if(get_option('rollback_footer_copyright') == '©' || trim(get_option('rollback_footer_copyright')) == ''){}
+else{
+?>
+<p style="text-align:center;"><?php echo get_option('rollback_footer_copyright'); ?> </p>
+<?php } ?>
 </div>
 </div>
 </div>

@@ -3,6 +3,9 @@
 <?php endif; ?>
 
 <?php 
+$blog_name_widgets = get_option('blog_name_widgets');
+$blog_slogan_widgets = get_option('blog_slogan_widgets');
+
 $social_media = get_option('social_media');
 $header_social_media_instagram = get_option('rollback_social_media_instagram');
 $header_social_media_twitter = get_option('rollback_social_media_twitter');
@@ -14,29 +17,32 @@ $header_social_media_pinterest = get_option('rollback_social_media_pinterest');
 $header_social_media_youtube = get_option('rollback_social_media_youtube');
 ?>
 
-
+<h1> Rollback Header Settings </h1>
 <table>
 <tr>
-    <td class="wayne-setting-name"><h3>Blog Name</h3></td>
-    <td class="wayne-setting-choose">
-    <select name="wayne_footer_widgets" class="wayne_footer_widgets">
-    <option value="enable">Enable</option>
-    <option value="disable">Disable</option>
-    </select>
-    </td>
-    <td><input type="submit" class="button-primary wayne_footer_widgets_button updated_true" value='Update'></td>
+  <td><h3>Blog Name</h3></td>
+  <td>
+  <select name="blog_name_widgets" class="blog_name_widgets">
+  <option value="enable">Enable</option>
+  <option value="disable">Disable</option>
+  </select>
+  </td>
+  <td><input type="submit" class="button-primary blog_name_widgets_button updated_true" value='Update'></td>
 </tr>
+
 <tr>
-    <td class="wayne-setting-name"><h3>Blog Slogan</h3></td>
-    <td class="wayne-setting-choose">
-    <select name="wayne_footer_widgets" class="wayne_footer_widgets">
-    <option value="enable">Enable</option>
-    <option value="disable">Disable</option>
-    </select>
-    </td>
-    <td><input type="submit" class="button-primary wayne_footer_widgets_button updated_true" value='Update'></td>
+  <td><h3>Blog Slogan</h3></td>
+  <td>
+  <select name="blog_slogan_widgets" class="blog_slogan_widgets">
+  <option value="enable">Enable</option>
+  <option value="disable">Disable</option>
+  </select>
+  </td>
+  <td><input type="submit" class="button-primary blog_slogan_widgets_button updated_true" value='Update'></td>
 </tr>
 </table>
+
+
 <h1>Header Social Media</h1>
 <table>
 
@@ -93,6 +99,43 @@ $header_social_media_youtube = get_option('rollback_social_media_youtube');
 
 
 <script>
+<?php  
+if(strlen($blog_name_widgets) > 0){?>
+    $("select.blog_name_widgets").val('<?=$blog_name_widgets?>').change();
+<?php
+} if(strlen($blog_slogan_widgets) > 0){?>
+  $("select.blog_slogan_widgets").val('<?=$blog_slogan_widgets?>').change();
+<?php
+} ?>
+
+
+$('.blog_name_widgets_button').on('click', function(){
+var blog_name_widgets = $("select.blog_name_widgets").children("option:selected").val();
+
+jQuery.post(
+    ajaxurl,
+    {
+        'action': 'rollback_ajax_blog_name_widgets',
+        'data': blog_name_widgets
+    }
+);
+
+});
+
+
+$('.blog_slogan_widgets_button').on('click', function(){
+
+var blog_slogan_widgets = $("select.blog_slogan_widgets").children("option:selected").val();
+
+jQuery.post(
+    ajaxurl,
+    {
+        'action': 'rollback_ajax_blog_slogan_widgets',
+        'data': blog_slogan_widgets
+    }
+);
+
+});
 
 /* ============== Instagram ========== */
 $('.rollback_social_media_instagram_button').on('click', function(){

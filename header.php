@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/button.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/social.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/single.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <?php wp_head(); ?>
@@ -26,55 +26,116 @@
     
     ?>
     </title>
+
+
 </head>
 <body style="background:#f5f5f5">
 <?php wp_footer();?>
-    <div class="ust">
-    <div class="contac"> 
-      <div class="row">
-              <!-- ============= Contac ================== -->
-              <div class="col-3  d-none d-sm-block"></div>
-                <div class="col-1  d-none d-sm-block"><span>|</span></div>
+<div class="ust">
+  <div class="contac"> 
+    <div class="row">
+      <!-- ============= Contac ================== -->
+      <div class="col-sm  d-none d-sm-block"></div>
+      <div class="col-1  d-none d-sm-block"><span>|</span></div>
 
-                <div class="col-12 col-md-4" style="width:100%">
-                <?php if(get_option('rollback_social_media_facebook') == '#' || trim(get_option('rollback_social_media_facebook')) == ''){}
-                else{
-                ?>
-                <a href="<?php echo get_option('rollback_social_media_facebook'); ?> "target=" _blank" class="rollback_header_social"><i class="fa fa-facebook"></i></i></a>
-                <?php }?>
-                  <span>Instagram</span>
-                  <span>Twitter</span>
-                  <span>Gmail</span>
-                  <span>Github</span>
-                </div>
-
-                <div class="col-1  d-none d-sm-block"><span>|</span></div>
-
-                <div class="col-3  d-none d-sm-block">    
-                  <form class="form-inline" action="<?php echo home_url( '/' ); ?>" method="get">
-                      <div class="search__wrapper"> 
-                        <input type="search" for="s" name="s" placeholder="Arama..." class="search__field" /> 
-                        <button type="submit" class="fa fa-search search__icon"></button>
-                      </div>
-                   </form>
-                </div>
-
-
-              </div>
-              </div> 
-                      <!-- =========== Logo ================== -->
-    <div class="row mt-2">
-      <div class="header"> 
-          <a href="<?php bloginfo('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>      
-          <hr>
+      <div class="col-6 col-md-5 d-none d-sm-block col-md-1" style="width:100%">
+        <?php if(get_option('rollback_social_media_instagram') == '#' || trim(get_option('rollback_social_media_instagram')) == ''){}
+        else{
+        ?>
+        <a href="<?php echo get_option('rollback_social_media_instagram'); ?>"target=" _blank" class="rollback_header_social"><i class="fa fa-instagram"> </i></a>
+        <?php }if(get_option('rollback_social_media_twitter') == '#' || trim(get_option('rollback_social_media_twitter')) == ''){}
+        else{
+        ?>
+        <a href="<?php echo get_option('rollback_social_media_twitter'); ?> "target=" _blank" class="rollback_header_social"><i class="fa fa-twitter"></i></a>
+        <?php }if(get_option('rollback_social_media_gmail') == '#' || trim(get_option('rollback_social_media_gmail')) == ''){}
+        else{
+        ?>
+        <a href="<?php echo get_option('rollback_social_media_gmail'); ?> "target=" _blank" class="rollback_header_social"><i class="fa fa-google"></i></a>
+        <?php }if(get_option('rollback_social_media_github') == '#' || trim(get_option('rollback_social_media_github')) == ''){}
+        else{
+        ?>
+        <a href="<?php echo get_option('rollback_social_media_github'); ?> "target=" _blank" class="rollback_header_social"><i class="fa fa-github"></i></a>
+        <?php }if(get_option('rollback_social_media_facebook') == '#' || trim(get_option('rollback_social_media_facebook')) == ''){}
+        else{
+        ?>
+        <a href="<?php echo get_option('rollback_social_media_facebook'); ?> "target=" _blank" class="rollback_header_social"><i class="fa fa-facebook"></i></a>
+        <?php}if(get_option('rollback_social_media_linkedin') == '#' || trim(get_option('rollback_social_media_linkedin')) == ''){}
+        else{
+        ?>
+        <a href="<?php echo get_option('rollback_social_media_linkedin'); ?> "target=" _blank" class="rollback_header_social"><i class="fa fa-linkedin"></i></a>
+        <?php }if(get_option('rollback_social_media_pinterest') == '#' || trim(get_option('rollback_social_media_pinterest')) == ''){}
+        else{
+        ?>
+        <a href="<?php echo get_option('rollback_social_media_pinterest'); ?> "target=" _blank" class="rollback_header_social"><i class="fa fa-pinterest"></i></a>
+        <?php }if(get_option('rollback_social_media_youtube') == '#' || trim(get_option('rollback_social_media_youtube')) == ''){}
+        else{
+        ?>
+        <a href="<?php echo get_option('rollback_social_media_youtube'); ?> "target=" _blank" class="rollback_header_social"><i class="fa fa-youtube"></i></a>
+        <?php }?>
       </div>
-    </div> 
 
-        
-        <!-- =========== Menus ================== -->
+<div class="col-1  d-none d-sm-block"><span>|</span></div>
 
 
-              <?php if (function_exists(header_menus())) header_menus(); ?>
+<div class="col-sm  d-none d-sm-block">    
+  <form class="form-inline" action="<?php echo home_url( '/' ); ?>" method="get">
+      <div class="search__wrapper"> 
+        <input type="search" for="s" name="s" placeholder="Arama..." class="search__field" /> 
+        <button type="submit" class="fa fa-search search__icon"></button>
+      </div>
+    </form>
+</div>
+
+
+  </div>
+</div> 
+<!-- Mobil Header -->
+<?php
+if ( wp_is_mobile() ) {?>
+<div class="contac"> 
+
+     <?php if(get_option('blog_name_widgets') == 'enable'){?>
+       <div class="row">
+         <div class="header"> 
+           <a href="<?php bloginfo('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>      
+           <hr>
+         </div>
+       </div> 
+     <?php } ?>
+
+</div> 
+<?php } else{ ?>
+<!-- =========== Logo ================== -->
+<?php if(get_option('blog_name_widgets') == 'enable'){?>
+<div class="row mt-2">
+  <div class="header"> 
+      <a href="<?php bloginfo('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>      
+      <hr>
+  </div>
+</div> 
+<?php }else{} ?>
+
+<?php } ?>
+
+<!-- Mobil Header -->
+
+
+
+<?php if(get_option('blog_slogan_widgets') == 'enable'){?>
+  <div class="slogan">
+    <?php echo get_bloginfo( 'description' ); ?>
+  </div>
+<?php }else{} ?>
+<div class="dropdown d-none ">
+  <div class="submit-wrapper"><a>Dropdown</a></div>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+<!-- =========== Menus ================== -->
+<?php if (function_exists(header_menus())) header_menus(); ?>
 
             
 

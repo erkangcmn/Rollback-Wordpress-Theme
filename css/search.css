@@ -18,7 +18,7 @@
   .search__field:focus {
     background-color: #f5f5f5;
     
-    width: 20vw;
+    width: 15vw;
     color: #2b2b2b;
     cursor: default;
   }

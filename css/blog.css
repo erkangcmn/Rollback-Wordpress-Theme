@@ -19,14 +19,14 @@ h2,h3,h4,h5,h6{
 
 }
 /* ====== header =====*/
-.fa {
+.contac .fa {
     color: #808080;
-    font-size: 25px;
+    font-size: 25px !important;
     width: 50px;
     text-align: center;
     text-decoration: none;
 }
-.fa:hover {
+.contac .fa:hover {
     color: white;
     font-size: 25px;
     width: 50px;
@@ -37,10 +37,16 @@ h2,h3,h4,h5,h6{
 .navbar{
     width:25%;
     text-align: center;
+    
     margin: auto;
     padding: auto;
 }
 
+.slogan{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 26px;
+}
 /* ====== header =====*/
 
 
@@ -50,14 +56,13 @@ h2,h3,h4,h5,h6{
     margin-top: 2px;
 }
 
+.test .fa{
+    color:white;
+    height: 10px;
+    text-decoration: none;
+}
 
-.contac{
-    width: 100%;
-    padding: 10px;
-    background-color:rgb(36, 33, 33);
-    text-align: center
 
-}/* navbar */
 .contac span{
 
     color:white;
@@ -205,8 +210,8 @@ h2,h3,h4,h5,h6{
     top: 0px;
     left: 50px;
     visibility: hidden;
-    width: 700;
-    height: 700;
+    font-size: 20px !important;
+    text-align: center;
     -webkit-user-select: none; 
     -webkit-touch-callout: none; 
     -moz-user-select: none; 
@@ -239,16 +244,36 @@ h2,h3,h4,h5,h6{
 }
 
 @media only screen and (max-width: 600px) {
+    .contac{
+        width: 100%;
+        padding: 2px;
+        background-color:#f5f5f5;
+        text-align: center;
+    
+    }/* navbar */
+    .header{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
     .header a{
+        margin-left: auto;
+        margin-right: auto;
         font-size: 30px;
-        
         text-decoration: none;
         font-family: Bahnschrift;
         color: #0e4796;
-        padding-left: 10px;
-        margin-top: 2px;
         font-weight:500;
         
+        }
+        .header:hover a{
+            margin-left: auto;
+            margin-right: auto;
+            color: #0e4796;
+            text-decoration: none;
+            font-family: Bahnschrift;
+            font-weight:500;
+            font-size:25px
         }
         .govde_resim{
             width: 100% !important;
@@ -272,6 +297,13 @@ h2,h3,h4,h5,h6{
 }
 
 @media only screen and (min-width: 600px) {
+    .contac{
+        width: 100%;
+        padding: 10px;
+        background-color:rgb(36, 33, 33);
+        text-align: center;
+    
+    }/* navbar */
 
     .header a{
         font-size: 80px;

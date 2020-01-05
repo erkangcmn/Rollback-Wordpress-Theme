@@ -44,8 +44,9 @@ if( have_posts() ) :
                     </a>
     
                     <div class="test">
-                        <span class="fa fa-comment"> 5 | </span>
-                        <span class="fa fa-eye" style="font-size:20px" aria-hidden="true"> <?php echo getPostViews(get_the_ID()); ?></span>
+                    <span class="fa fa-comment"> 5</span>
+                        <span> | </span>
+                        <span class="fa fa-eye"aria-hidden="true"> </span> <?php echo getPostViews(get_the_ID()); ?>
                     </div>
 
                 <div class="card-body">

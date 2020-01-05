@@ -27,8 +27,9 @@ if($j ==1){
       </a>
 
       <div class="test">
-         <span class="fa fa-comment"> 5 | </span>
-         <span class="fa fa-eye" style="font-size:20px" aria-hidden="true"> <?php echo getPostViews(get_the_ID()); ?></span>
+      <span class="fa fa-comment"> 5</span>
+        <span> | </span>
+        <span class="fa fa-eye"aria-hidden="true"> </span> <?php echo getPostViews(get_the_ID()); ?>
       </div>
 
       <div class="card-body">
@@ -71,8 +72,9 @@ else{
         else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" />
       </a>
       <div class="test">
-        <span class="fa fa-comment"> 5 | </span>
-        <span class="fa fa-eye" style="font-size:20px" aria-hidden="true"> <?php echo getPostViews(get_the_ID()); ?></span>
+      <span class="fa fa-comment"> 5</span>
+        <span> | </span>
+        <span class="fa fa-eye"aria-hidden="true"> </span> <?php echo getPostViews(get_the_ID()); ?>
       </div>
 
 
@@ -96,10 +98,12 @@ else{
             else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';}?>"/>
         </a>
    
-          <div class="test">
-            <span class="fa fa-comment"> 5 | </span>
-            <span class="fa fa-eye" style="font-size:20px" aria-hidden="true"> <?php echo getPostViews(get_the_ID()); ?></span>
-          </div>
+        <div class="test">
+        <span class="fa fa-comment"> 5</span>
+        <span> | </span>
+        <span class="fa fa-eye"aria-hidden="true"> </span> <?php echo getPostViews(get_the_ID()); ?>
+      </div>
+
 
           <div class="card-body">
             <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>

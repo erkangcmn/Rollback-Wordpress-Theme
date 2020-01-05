@@ -1,36 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-</head>
-<body>
+<?php if(!empty($_SERVER['SCRIPT_FILENAME']) && 'wayne-social-media.php' == basename($_SERVER['SCRIPT_FILENAME'])) : ?>  	
+	<?php die('Something went wrong. ERR4004'); ?>  
+<?php endif; ?>
+
+<?php 
+$blog_name_footer_widgets = get_option('blog_name_footer_widgets');
+
+$rollback_footer_copyright = get_option('rollback_footer_copyright');
+?>
+
+
+<h1>Roolback Footer Settings</h1>
+
 <table>
-    <h1>Footer Settings</h1>
 <tr>
-    <td class="wayne-setting-name"><h3>Text</h3></td>
-    <td class="wayne-setting-choose">
-    <select name="wayne_footer_widgets" class="wayne_footer_widgets">
-    <option value="enable">Enable</option>
-    <option value="disable">Disable</option>
-    </select>
-    </td>
-    <td><input type="submit" class="button-primary wayne_footer_widgets_button updated_true" value='Update'></td>
+  <td><h3>Footer Blog Name</h3></td>
+  <td>
+  <select name="blog_name_footer_widgets" class="blog_name_footer_widgets">
+  <option value="enable">Enable</option>
+  <option value="disable">Disable</option>
+  </select>
+  </td>
+  <td><input type="submit" class="button-primary blog_name_footer_widgets_button updated_true" value='Update'></td>
 </tr>
 
+</table>
+
+<table>
 <tr>
-    <td class="wayne-setting-name"><h3>Blog Name</h3></td>
-    <td class="wayne-setting-choose">
-    <select name="wayne_footer_widgets" class="wayne_footer_widgets">
-    <option value="enable">Enable</option>
-    <option value="disable">Disable</option>
-    </select>
-    </td>
-    <td><input type="submit" class="button-primary wayne_footer_widgets_button updated_true" value='Update'></td>
+    <td><h3>Copyright:</h3></td>
+    <td><input type="text" placeholder="©" value ="<?=$rollback_footer_copyright?>" name="rollback_footer_copyright" class="rollback_footer_copyright"/></td>
+    <td><input type="submit" class="button-primary rollback_footer_copyright_button updated_true" value='Update'></td>
 </tr>
 </table>
-    
-</body>
-</html>
+
+
+<script>
+
+/* Footer Blog Name */
+<?php  
+if(strlen($blog_name_footer_widgets) > 0){?>
+    $("select.blog_name_footer_widgets").val('<?=$blog_name_footer_widgets?>').change();
+<?php } ?>
+
+/* Footer Blog Name */
+$('.blog_name_footer_widgets_button').on('click', function(){
+var blog_name_footer_widgets = $("select.blog_name_footer_widgets").children("option:selected").val();
+
+jQuery.post(
+    ajaxurl,
+    {
+        'action': 'rollback_ajax_blog_name_footer_widgets',
+        'data': blog_name_footer_widgets
+    }
+);
+});
+
+
+/* Footer Copyright */
+$('.rollback_footer_copyright_button').on('click', function(){
+var rollback_footer_copyright = $(".rollback_footer_copyright").val();
+
+jQuery.post(
+    ajaxurl,
+    {
+        'action': 'rollback_ajax_footer_copyright',
+        'data': rollback_footer_copyright
+    }
+);
+});
+
+
+</script>
