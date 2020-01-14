@@ -41,8 +41,8 @@ class ctUp_ads extends WP_Widget {
     ?>
 	<div class="row mt-5 mb-2">
 	<div class="col-12 col-md-12 col-lg-12">
-			<div class="card" style="width: 18rem;">
-            <img src="<?php echo $image; ?>" style="margin:0;padding:0;max-width:100%;display:block"/>
+			<div class="card" style="width: 22rem;">
+            <img src="<?php echo $image; ?>" style="margin:0;padding:0;width:100%;display:block"/>
                 <div class="card-body">
 					<h5 class="card-title"><?php echo $about_title; ?></h5>
 					<p class="card-text"><?php echo $detail; ?></p>

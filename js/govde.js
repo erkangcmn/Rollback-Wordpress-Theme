@@ -67,40 +67,4 @@ $(document).ready(function(){
         
     });
   });
-
-  $(document).ready(function(){
-    $(".search__wrapper").click(function(){
-      $(this).children(".search__icon").css({
-        "position": "absolute",
-        "top": "0",
-        "right":"0",
-        "height":"32px !important",
-        "width":"40px !important",
-        "background-color":"white",
-        "color":"rgb(36, 33, 33)",
-        "font-size":"1.35em",
-        "text-align":"center",
-        "border-color":"transparent",
-        "border-radius":"50%",
-        "pointer-events":"none",
-        "display":"inline-block",
-        "transition":"background-color 0.2s ease-in-out"})
-      }, function(){
-        $(this).children(".search__icon").css({
-          "position": "absolute",
-          "top": "0",
-          "right":"0",
-          "height":"32px !important",
-          "width":"40px !important",
-          "background-color":"white",
-          "color":"rgb(36, 33, 33)",
-          "font-size":"1.35em",
-          "text-align":"center",
-          "border-color":"transparent",
-          "border-radius":"50%",
-          "pointer-events":"none",
-          "display":"inline-block",
-          "transition":"background-color 0.2s ease-in-out"})
-    });
-  });
  

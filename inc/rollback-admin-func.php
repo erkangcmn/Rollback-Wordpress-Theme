@@ -80,6 +80,13 @@ function rollback_ajax_blog_slogan_widgets(){
 }
 add_action( 'wp_ajax_rollback_ajax_blog_slogan_widgets', 'rollback_ajax_blog_slogan_widgets');
 
+/* ===================== Home Page========================= */
+function rollback_ajax_blog_home_page_widgets(){
+    update_option('blog_home_page_widgets', sanitize_text_field($_POST['data']));
+    wp_die();
+}
+add_action( 'wp_ajax_rollback_ajax_blog_home_page_widgets', 'rollback_ajax_blog_home_page_widgets');
+
 
 /* ===================== Footer ========================= */
 

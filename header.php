@@ -81,7 +81,7 @@
   <form class="form-inline" action="<?php echo home_url( '/' ); ?>" method="get">
       <div class="search__wrapper"> 
         <input type="search" for="s" name="s" placeholder="Arama..." class="search__field" /> 
-        <button type="submit" class="fa fa-search search__icon"></button>
+        <button class="fa fa-search search__icon"></button>
       </div>
     </form>
 </div>

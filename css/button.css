@@ -47,7 +47,7 @@
     transition:all 0.6s;
     color:#f5f5f5;
 }
- 
+
 
 /* =================== Dropdawn ================= */
 
@@ -78,7 +78,43 @@
   
   .dropdown:hover .dropdown-content {display: block;}
 
+  /* Anasayfa netx and previous button*/
+.next_prev{
+  overflow: hidden;
+}
+.next_prev .sag_button:hover{
+  background-color: gray;
+  
+}
+.sag_button:hover a{
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  
+}
+.sol_button:hover a{
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.next_prev .sol_button:hover{
+  background-color: gray;
+}
+.next_prev .sol_button{
+  margin-top: 20px;
+  float: left;
+  background-color: #ddd;
+}
+.next_prev .sag_button{
+  margin-top: 20px;
+  float: right;
+  background-color: #ddd;
 
+}
+.next_prev a{
+  font-weight: 600;
+  margin:15px 9px 8px 9px !important;
+  text-decoration: none;
+  color:black;
 
-
-
+}

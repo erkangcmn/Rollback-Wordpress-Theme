@@ -7,6 +7,8 @@ function register_rollback_theme_menu_page(){
 	add_menu_page( 'Rollback Admin Page','Rollback Admin','manage_options','rollback_theme_menu_page','rollback_theme_menu_page',plugins_url( 'img/icon.png' ), 61);
 	add_submenu_page( 'rollback_theme_menu_page', 'Rollback Admin Page', 'Header Admin Page','manage_options', 'rollback_theme_menu_page');
 
+	add_submenu_page( 'rollback_theme_menu_page', 'Anasayfa Admin Page', 'Anasayfa Admin Page','manage_options','rollback-anasayfa' , 'rollback_anasayfa_page');
+
 	add_submenu_page( 'rollback_theme_menu_page', 'Footer Admin Page', 'Footer Admin Page','manage_options','rollback-footer' , 'rollback_footer_page');
 }
 
@@ -16,6 +18,9 @@ function rollback_theme_menu_page(){
 }
 function rollback_footer_page(){
 	require(__DIR__).'/admin/rollback-footer-page.php';
+}
+function rollback_anasayfa_page(){
+	require(__DIR__).'/admin/rollback-anasayfa-page.php';
 }
 
 
@@ -79,5 +84,6 @@ function content($limit) {
 
   return $content;
 }
+
 
 ?>
