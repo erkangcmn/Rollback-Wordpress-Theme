@@ -31,7 +31,9 @@ if($j == 1){?>
       </div>
       <div class="card-body">
         <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?> </a></span>
-        <p class="card-text" ><?php echo excerpt(13); ?></p>
+        <p class="card-text" ><?php
+            if ( wp_is_mobile() ) {echo excerpt(10);}
+            else{echo excerpt(13);}?></p>
       </div>
 
     </div>
@@ -46,6 +48,10 @@ if($j == 1){?>
 <?php
 }
 else{
+  if ( wp_is_mobile() ) {
+    echo'<div class="row mt-5">';
+  }
+  else{
   if($i==0 || $i == 2 || $i == 4 || $i==5){
 ?>
 
@@ -53,7 +59,7 @@ else{
 <div class="row mt-5">
 
 
-<?php } $i++; ?>
+<?php } }$i++; ?>
 
 
 <?php if($i > 0 && $i < 5 ){ ?>
@@ -68,15 +74,17 @@ else{
         else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" />
       </a>
       <div class="test">
-      <span class="fa fa-comment"> 5</span>
+      <span class="fa fa-comment"> <?php echo get_comments_number(); ?></span>
         <span> | </span>
-        <span class="fa fa-eye"aria-hidden="true"> </span> <?php echo getPostViews(get_the_ID()); ?>
+        <span class="fa fa-eye" aria-hidden="true"> </span> <?php echo getPostViews(get_the_ID()); ?>
       </div>
 
 
       <div class="card-body">
-        <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>
-        <p class="card-text" ><?php echo excerpt(13); ?></p>
+        <div class="card-title"><div class="govde_baslik_yazi"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div></div>
+        <p class="card-text" ><?php
+            if ( wp_is_mobile() ) {echo excerpt(10);}
+            else{echo excerpt(13);}?></p>
 
       </div>
     </div>
@@ -103,7 +111,9 @@ else{
 
           <div class="card-body">
             <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>
-            <p class="card-text"><?php echo excerpt(30); ?></p>
+            <p class="card-text"><?php 
+            if ( wp_is_mobile() ) {echo excerpt(10);}
+            else{echo excerpt(30);}?></p>
 
           </div>
         </div>
@@ -111,7 +121,10 @@ else{
 
 
 <?php } 
-
+if ( wp_is_mobile() ) {
+  echo'</div>';
+}
+else{
 if($j == 3){
   if($i == 2 || $i == 4)
   {
@@ -124,7 +137,7 @@ if($i == 2 || $i == 4 || $i == 5 || $i == 6  ){?>
 </div>
 
 
-<?php }}} endwhile; ?>
+<?php }}}} endwhile; ?>
 <?php if(get_option('blog_home_page_widgets') == 'next_prev'){?>
 <div class="next_prev col-12">
   <div class="sol_button">

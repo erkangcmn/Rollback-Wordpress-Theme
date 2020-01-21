@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
 
@@ -92,7 +93,18 @@
 <!-- Mobil Header -->
 <?php
 if ( wp_is_mobile() ) {?>
-<div class="contac"> 
+<div class="pos-f-t" style="float:left">
+
+<nav class="navbar navbar-dark ">
+    <button class="navbar-toggler"type="button" data-toggle="collapse" style="background-color:#0e4796;" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+</div>
+
+
+<div class="contac" > 
 
      <?php if(get_option('blog_name_widgets') == 'enable'){?>
        <div class="row">
@@ -104,9 +116,32 @@ if ( wp_is_mobile() ) {?>
      <?php } ?>
 
 </div> 
+<div class="collapse" id="navbarToggleExternalContent" style="background-color:#ddd;">
+    <div class="p-4">
+    <div class="col-12 col-md-12 col-lg-12">    
+
+<form role="search" action="<?php echo home_url( '/' ); ?>" method="get">
+<div id="custom-search-input">
+    <div class="input-group">
+      
+      <input type="text" class="search-query form-control"for="s" name="s" id="s" placeholder="<?php echo $rollback_search; ?>" />
+      <span class="input-group-btn">
+        <button type="submit">
+          <span class="fa fa-search"></span>
+        </button>
+      </span>
+    </div>
+  </div>
+</form>
+<?php wp_nav_menu( array( 'theme_location' => 'header_menu' ) ); ?>
+</div>
+
+    </div>
+</div>
 <?php } else{ ?>
 <!-- =========== Logo ================== -->
 <?php if(get_option('blog_name_widgets') == 'enable'){?>
+  
 <div class="row mt-2">
   <div class="header"> 
       <a href="<?php bloginfo('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>      
@@ -126,16 +161,10 @@ if ( wp_is_mobile() ) {?>
     <?php echo get_bloginfo( 'description' ); ?>
   </div>
 <?php }else{} ?>
-<div class="dropdown d-none ">
-  <div class="submit-wrapper"><a>Dropdown</a></div>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
+
 <!-- =========== Menus ================== -->
 <?php if (function_exists(header_menus())) header_menus(); ?>
+
 
             
 

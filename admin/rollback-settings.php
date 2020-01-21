@@ -16,8 +16,13 @@ $header_social_media_linkedin= get_option('rollback_social_media_linkedin');
 $header_social_media_pinterest = get_option('rollback_social_media_pinterest');
 $header_social_media_youtube = get_option('rollback_social_media_youtube');
 ?>
+<table>
+<tr>
+<td><h1> Rollback Header Settings </h1> </td>
 
-<h1> Rollback Header Settings </h1>
+ <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px"> Güncellendi</span></h4>
+ </tr>
+</table>
 <table>
 <tr>
   <td><h3>Blog Name</h3></td>
@@ -250,10 +255,11 @@ jQuery.post(
 });
 /* ============== YouTube ========== */
 
-$('.updated_true').on('click', function(){
-  alert("Alert Message","Alert Title")
-
-});
+$(document).ready(function(){
+    $(".updated_true").focus(function(){
+      $(".admin_upload").css("display", "inline").fadeOut(2000);
+    });
+  });
 </script>
 
 

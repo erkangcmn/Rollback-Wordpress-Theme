@@ -19,6 +19,7 @@ h2,h3,h4,h5,h6{
     font-weight:500
 
 }
+
 /* ====== header =====*/
 .contac .fa {
     color: #808080;
@@ -164,26 +165,41 @@ h2,h3,h4,h5,h6{
     margin:30px;
 }
 /* Gövde basşlık*/
-.govde_baslik{
- color:black;
- text-decoration: none;
- font-family: sans-serif;
- border-left: 2px rgb(36, 33, 33) solid;
- padding-left: 10px;
- margin-top: 2px;
- font-weight:500;
- font-size:23px
+.govde_baslik_yazi{
+    padding: 0px 20px 0px 5px;
+    color:black;
+    text-decoration: none;
+    font-family: sans-serif;
+
+    margin-top: 2px;
+    font-weight:500;
+    font-size:23px;
 }
-.govde_baslik:hover{
+
+.govde_baslik_yazi a{
+
+    color:black;
+
+    font-family: sans-serif;
+    border-left: 2px rgb(36, 33, 33) solid;
+    padding: 0px 20px 0px 5px;
+    margin-top: 2px;
+    font-weight:500;
+   font-size:23px
+}
+.govde_baslik_yazi a:hover{
+
     color:black;
     text-decoration: none;
     font-family: sans-serif;
     border-left: 2px rgb(36, 33, 33) solid;
-    padding-left: 10px;
+    padding: 0px 20px 0px 5px;
     margin-top: 2px;
     font-weight:500;
    font-size:23px
-   }
+}
+
+
 
 
 /* Load more*/
@@ -227,11 +243,12 @@ h2,h3,h4,h5,h6{
     padding-left: 10px;
     font-weight:500;
     text-align: center;
+    margin: auto;
     
 }
 /* footer */
 .footer{
-    margin: 60px 20px 20px 30px;
+    margin: 10px;
 
 
 }
@@ -245,7 +262,18 @@ h2,h3,h4,h5,h6{
 }
 
 @media only screen and (max-width: 600px) {
-
+    .card{        
+        width: 100%;
+        border-radius: 10px;
+        padding: 0px;
+    }
+    .card img{ 
+        
+        margin-top:0px ;
+        width: 100%;
+        border-radius: 10px;
+        padding: 0px;
+    }
     .contac{
         width: 100%;
         padding: 2px;
@@ -261,7 +289,7 @@ h2,h3,h4,h5,h6{
     .header a{
         margin-left: auto;
         margin-right: auto;
-        font-size: 30px;
+        font-size: 34px;
         text-decoration: none;
         font-family: Bahnschrift;
         color: #0e4796;
@@ -275,26 +303,29 @@ h2,h3,h4,h5,h6{
             text-decoration: none;
             font-family: Bahnschrift;
             font-weight:500;
-            font-size:25px
+            font-size:34px
         }
         .govde_resim{
             width: 100% !important;
             height:175px !important;
-            border-radius:5px;
+  
+
         }
         .card{
             padding:0px;
             margin-top:15px;
             height:100% !important;
+            width: 100% !important;
         }
         .govde_resim_buyuk{
             width: 100% !important;
             height:175px !important;
-            border-radius:5px;
+         
         }
         .n2-ss-align{
             width:100%;
         }
+ 
 
             
 
@@ -302,7 +333,9 @@ h2,h3,h4,h5,h6{
 }
 
 @media only screen and (min-width: 600px) {
-    
+    .about_me{
+        width: 20rem;
+    }
     .contac{
         width: 100%;
         padding: 10px;
@@ -346,5 +379,6 @@ h2,h3,h4,h5,h6{
             margin-left:auto;
             margin-right:auto;
         }
+        
 
 }

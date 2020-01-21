@@ -7,6 +7,7 @@ function register_my_menus() {
 		'footer-menu' => __( 'Footer Menu' ),
 	  )
 	);
+	
   }
   add_action( 'init', 'register_my_menus' );
 

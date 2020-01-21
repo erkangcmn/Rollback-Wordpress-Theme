@@ -7,13 +7,13 @@
     <div class="col-12 mt-5 col-md-6 col-lg-6">
     <?php  while(have_posts()) : the_post();?>
 
-<img src="<?php if ( has_post_thumbnail() ) {
+<img class="single_img" src="<?php if ( has_post_thumbnail() ) {
 	echo the_post_thumbnail_url();
 }
 else{
   echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';
 }
-?>" style="width: 100% !important;height:400px !important;padding:1px !important; border-radius:5px;"/>
+?>"/>
 
 
 
@@ -33,7 +33,7 @@ else{
       
       <span class="reading_time">
       <?php echo okuma_suresi(get_the_content());?> dk okuma süresi</span>
-
+      <span><?php the_date("d M y"); ?></span>
      <?php setPostViews(get_the_ID()); ?>
       
       <span style="float:right"><?php the_category(", "); ?></span>
@@ -43,7 +43,7 @@ else{
         <?php the_content(); ?>
         
       </p>
-      <span><?php the_date("d M y"); ?></span>
+    
 
 
 
@@ -52,6 +52,10 @@ else{
 
 
     <?php endwhile; ?>
+  <div class="yorumlar mt-5">
+    <?php comments_template(); ?>
+
+  </div>
 
     </div>
 
@@ -60,6 +64,7 @@ else{
     <div class="col-12 col-md-4 col-lg-4"><?php require_once("sidebar.php"); ?></div>
 </div>
 </div>
+
 
 <div class="footer">
 <div class="row" style="margin-top:30%">

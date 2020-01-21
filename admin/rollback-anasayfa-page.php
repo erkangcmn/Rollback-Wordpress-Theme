@@ -5,7 +5,15 @@
 <?php 
 $blog_home_page_widgets = get_option('blog_home_page_widgets');
 ?>
-<h1>Home Page Settings</h1>
+
+
+<table>
+<tr>
+<td><h1>Home Page Settings</h1> </td>
+
+ <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px"> Güncellendi</span></h4>
+ </tr>
+</table>
 
 <table>
 <tr>
@@ -41,4 +49,9 @@ jQuery.post(
 );
 });
 
+$(document).ready(function(){
+    $(".updated_true").focus(function(){
+      $(".admin_upload").css("display", "inline").fadeOut(2000);
+    });
+  });
 </script>

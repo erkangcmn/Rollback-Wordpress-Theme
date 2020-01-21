@@ -51,7 +51,9 @@ if( have_posts() ) :
 
                 <div class="card-body">
                     <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>
-                    <p class="card-text"><?php the_excerpt(); ?></p>
+                    <p class="card-text"><?php
+                    if ( wp_is_mobile() ) {echo excerpt(10);}
+                    else{echo excerpt(30);}?></p>
 
                 </div>
             </div>
