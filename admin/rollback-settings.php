@@ -3,6 +3,8 @@
 <?php endif; ?>
 
 <?php 
+$header_code = get_option('header_code');
+
 $blog_name_widgets = get_option('blog_name_widgets');
 $blog_slogan_widgets = get_option('blog_slogan_widgets');
 
@@ -19,10 +21,21 @@ $header_social_media_youtube = get_option('rollback_social_media_youtube');
 <table>
 <tr>
 <td><h1> Rollback Header Settings </h1> </td>
-
  <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px"> Güncellendi</span></h4>
  </tr>
 </table>
+
+
+<table>
+  <tr>
+    <?php $a="[smartslider3 slider=1]" ?>
+    <td><h3>Smart Slider Shortcode:</h3> </td>
+    <td><input type="text" placeholder="<?=$a ?>" value ="<?=$header_code?>" name="header_code" class="header_code"/></td>
+    <td><input type="submit" class="button-primary header_code_button updated_true" value='Update'></td>
+  </tr>
+</table>
+
+
 <table>
 <tr>
   <td><h3>Blog Name</h3></td>
@@ -141,6 +154,20 @@ jQuery.post(
 );
 
 });
+
+/* ============== Header Code ========== */
+$('.header_code_button').on('click', function(){
+var header_code = $(".header_code").val();
+
+jQuery.post(
+    ajaxurl,
+    {
+        'action':'rollback_ajax_header_code',
+        'data': header_code
+    }
+);
+});
+/* ============== Header Code ========== */
 
 /* ============== Instagram ========== */
 $('.rollback_social_media_instagram_button').on('click', function(){

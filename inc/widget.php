@@ -36,13 +36,13 @@ function hstngr_register_widget() {
 	if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div class="row mt-3" style="font-family: sans-serif; font-style:normal;font-weight:300" >
 
-		<div class="col-12 col-md-4 col-lg-4"><a href="<?php the_permalink(); ?>">
+		<div class="col-5 col-sm-4 col-md-4"><a href="<?php the_permalink(); ?>">
 			<img src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
 			else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" 
 			style="width: 130px !important;height:75px !important;border-radius:4px;"/></a>
 		</div>
 
-		<div class="col-12 col-md-8 col-lg-8"> 
+		<div class="col-7 col-sm-8 col-md-8"> 
 		<a href="<?php the_permalink(); ?>" style="font-size:16px;font-weight:600"><?php the_title(); ?></a><br>
 			<span><?php the_time("j F Y"); ?></span>
 		</div>
@@ -302,7 +302,7 @@ function rollback_search_widget() {
 	//output
 	?>
 		<div class="row">
-			<div class="col-12 col-md-12 col-lg-12">    
+			<div class="col-12 col-sm-12 col-md-6">    
 
 		<form role="search" action="<?php echo home_url( '/' ); ?>" method="get">
 		<div id="custom-search-input">

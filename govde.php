@@ -65,7 +65,7 @@ else{
 <?php if($i > 0 && $i < 5 ){ ?>
 
 
-  <div class="col-12 col-md-6 col-lg-6">
+  <div class="col-12 col-sm-12 col-lg-6">
     <div class="card" style="margin:auto;height:100%;">
 
 
@@ -94,7 +94,7 @@ else{
 <?php } if($i >=5 && $i <= 6){?>
 
 
-  <div class="col-12 col-md-12 col-lg-12 mt-3">
+  <div class="col-sm-6 col-md-12 mt-3">
       <div class="card" style="margin:auto">
 
       <a href="<?php the_permalink(); ?>">

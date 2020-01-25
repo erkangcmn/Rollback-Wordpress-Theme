@@ -51,40 +51,30 @@ ol.commentlist p{
     font-size: 1.2em;
 
 }
-ol.commentlist li .vcard img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-ol.commentlist li .vcard .fn{
-font-weight: bold;
-}
-ol.commentlist li .commentmetadata{
-font-size: 14px;
-}
-ol.commentlist li .commentmetadata a{
-    background-color: #ddd;
-    padding:5px 8px 5px 8px;
-    border-radius:9px;
-    font-weight:600;
-    color:#808080;
-    text-decoration: none;
-}
-ol.commentlist li .commentmetadata a:hover{
-    background-color: #ddd;
-    padding:5px 8px 5px 8px;
 
-    border-radius:9px;
-    font-weight:600;
-    color:#808080;
-    text-decoration: none;
+ol.commentlist li cite{
+font-weight: bold;
+font-size: 18px;
 }
+ol.commentlist li .small{
+font-size: 14px;
+background-color: #ddd;
+padding:5px 8px 5px 8px;
+
+border-radius:9px;
+font-weight:600;
+color:#808080;
+text-decoration: none;
+}
+
 #respond{
     background-color: #ddd;
     margin-bottom: 20px;
     padding: 10px 12px 10px 12px;
     border-radius: 8px;
 }
+
+
 .navigation{
     display: flex;
 }

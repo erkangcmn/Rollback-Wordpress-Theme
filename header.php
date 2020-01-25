@@ -39,7 +39,7 @@
       <div class="col-sm  d-none d-sm-block"></div>
       <div class="col-1  d-none d-sm-block"><span>|</span></div>
 
-      <div class="col-6 col-md-5 d-none d-sm-block col-md-1" style="width:100%">
+      <div class="col-6 col-md-5 col-sm-12 d-none d-sm-block col-md-1" style="width:100%">
         <?php if(get_option('rollback_social_media_instagram') == '#' || trim(get_option('rollback_social_media_instagram')) == ''){}
         else{
         ?>
@@ -166,7 +166,14 @@ if ( wp_is_mobile() ) {?>
 <?php if (function_exists(header_menus())) header_menus(); ?>
 
 
-            
+<div class="dropdown" style="width:260px">
+  <span  data-toggle="dropdown"><a>Dropdown Example <i class="fa fa-sort-desc" style="font-size:24px"></i></a></span>
+<div class="dropdown-content" style="margin-left:30px">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div> 
 
       
       

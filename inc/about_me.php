@@ -40,7 +40,7 @@ class ctUp_ads extends WP_Widget {
     $image = esc_url($instance['image_uri']);
     ?>
 	<div class="row mt-5 mb-2">
-    <div class="col-12 col-md-6 col-lg-6">
+    <div class="col-12 col-sm-12 col-md-6">
 			<div class="card about_me" style="margin:auto;height:100%;">
             <img src="<?php echo $image; ?>" style="margin:0;padding:0;width:100%;display:block"/>
                 <div class="card-body">

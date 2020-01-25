@@ -3,6 +3,13 @@ if(!empty($_SERVER['SCRIPT_FILENAME']) && 'wayne-admin-func.php' == basename($_S
      die('Something went wrong. ERR4004'); 
  endif; 
 
+/* Header Code */
+function rollback_ajax_header_code(){
+    update_option('header_code', sanitize_text_field($_POST['data']));
+    wp_die();
+}
+add_action( 'wp_ajax_rollback_ajax_header_code', 'rollback_ajax_header_code');
+
 
 /* Instagram */
 function rollback_ajax_social_media_instagram(){
