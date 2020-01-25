@@ -19,7 +19,7 @@ function header_menus() {
 		$menu_items = wp_get_nav_menu_items($menu->term_id);
 
 		$menu_list = "";
-		$order_list = "";
+
 		$i = 0;
 		foreach ((array) $menu_items as $key => $menu_item) {
 			$mip = $menu_item->menu_item_parent;
@@ -30,7 +30,7 @@ function header_menus() {
 
 			$menu_list .= "<b><a href='$url'>$title </a></b>";
 			$order_list .= $mip;
-			/*if($mip > 0){
+			if($mip > 0){
 				$i++;
 				if($i == 1){
 					echo '<b>Önceki menünün numarası</b>'.($menu_order - 1).'<br>';
@@ -53,11 +53,11 @@ function header_menus() {
 				
 				
 
-			}*/
+			}
 			
 
 		}	
-		echo $order_list;
+
 	
 	} else {
 
