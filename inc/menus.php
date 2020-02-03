@@ -19,8 +19,8 @@ function header_menus() {
 		$menu_items = wp_get_nav_menu_items($menu->term_id);
 
 		$menu_list = "";
-
-		$i = 0;
+		echo '<div class="menus-flex">';
+		$ust_menu = false;
 		foreach ((array) $menu_items as $key => $menu_item) {
 			$mip = $menu_item->menu_item_parent;
 			$title = $menu_item->title;
@@ -29,54 +29,33 @@ function header_menus() {
 
 
 			$menu_list .= "<b><a href='$url'>$title </a></b>";
-			$order_list .= $mip;
-			if($mip > 0){
-				$i++;
-				if($i == 1){
-					echo '<b>Önceki menünün numarası</b>'.($menu_order - 1).'<br>';
+
+			if($mip == 0){
+				if($ust_menu){
+					echo '</div></div>';
+					$ust_menu = false;
 				}
 
-				echo 'Menu number -> '.$menu_order.' i nin yeni değeri = '.$i.'<br>';
-
-			}			
-			elseif($mip == 0){
-				$i = 0;
-				if($mip == 0){
-					$i = 0;		
-					echo 'Menu number -> '.$menu_order.' i nin yeni değeri = '.$i.'<br>';		
-	
-				}
-				elseif(($i != 0) && ($mip == 0)){
-					echo 'Menu number -> '.$menu_order.' i nin yeni değeri = '.$i.'<br>';
-				}
-				
-				
-				
-
+				echo '
+				<div class="dropdown " style="text-align:center;margin:auto;padding:20px">
+				<span  data-toggle="dropdown"><a class="top_menu">'.$title.'</a></span>
+				<div class="dropdown-content" style="margin-top:5px">';		
+				$ust_menu = true;
 			}
+			else{
+				echo "<a href='$url' class='dropdown-item'>$title</a>";
+			}		
 			
-
 		}	
 
+		echo'</div></div></div>';
+
+
+	  
 	
 	} else {
 
 	}
-	
-	
-		/* 
-		$menu_item_parent 0 ise ve alt menüsü yok ise menünün tasarımı normal olacak 
-		$menu_item_parent 0 dan farklı ise alt menü olarak eklenecek ve ana menünün tasarımı dropdown olacak
-		$menu_item_parent 0 oluncada aynı kontrolleri tekrar yapacak
-		*/
-		
-			echo "<div class='row mt-5 mb-5 ml-0 mr-0  d-none d-sm-block' >
-			<div class=' col-sm submit-wrapper' style='padding-left:0 auto;padding-right:0 auto;text-align: center'>".$menu_list."</div></div>";
-		
-	
-
-	
-
 
 }
 
@@ -128,7 +107,6 @@ function footer_menus() {
 			
 		}
 	} else {
-		// $menu_list = '<!-- no list defined -->';
 	}
 	echo "<ul> ".$menu_list."</ul> ";
 }
