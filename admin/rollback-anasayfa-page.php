@@ -33,7 +33,7 @@ $blog_home_page_widgets = get_option('blog_home_page_widgets');
 /* More Post */
 <?php  
 if(strlen($blog_home_page_widgets) > 0){?>
-    $("select.blog_home_page_widgets").val('<?=$blog_home_page_widgets?>').change();
+    $("select.blog_home_page_widgets").val('<?php echo $blog_home_page_widgets;?>').change();
 <?php } ?>
 
 /* More Post */

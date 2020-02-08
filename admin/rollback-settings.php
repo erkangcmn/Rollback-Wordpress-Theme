@@ -30,7 +30,7 @@ $header_social_media_youtube = get_option('rollback_social_media_youtube');
   <tr>
     <?php $a="[smartslider3 slider=1]" ?>
     <td><h3>Smart Slider Shortcode:</h3> </td>
-    <td><input type="text" placeholder="<?=$a ?>" value ="<?=$header_code?>" name="header_code" class="header_code"/></td>
+    <td><input type="text" placeholder="<?php echo $a; ?>" value ="<?php echo $header_code; ?>" name="header_code" class="header_code"/></td>
     <td><input type="submit" class="button-primary header_code_button updated_true" value='Update'></td>
   </tr>
 </table>
@@ -67,49 +67,49 @@ $header_social_media_youtube = get_option('rollback_social_media_youtube');
 
   <tr>
     <td><h3>Instagram:</h3> </td>
-    <td><input type="text" placeholder="#" value ="<?=$header_social_media_instagram?>" name="rollback_social_media_instagram" class="rollback_social_media_instagram"/></td>
+    <td><input type="text" placeholder="#" value ="<?php echo $header_social_media_instagram; ?>" name="rollback_social_media_instagram" class="rollback_social_media_instagram"/></td>
     <td><input type="submit" class="button-primary rollback_social_media_instagram_button updated_true" value='Update'></td>
   </tr>
 
   <tr>
     <td><h3>Twitter:</h3> </td>
-    <td><input type="text" placeholder="#" value ="<?=$header_social_media_twitter?>" name="rollback_social_media_twitter" class="rollback_social_media_twitter"/></td>
+    <td><input type="text" placeholder="#" value ="<?php echo $header_social_media_twitter; ?>" name="rollback_social_media_twitter" class="rollback_social_media_twitter"/></td>
     <td><input type="submit" class="button-primary rollback_social_media_twitter_button updated_true" value='Update'></td>
   </tr>
 
   <tr>
     <td><h3>Gmail:</h3> </td>
-    <td><input type="text" placeholder="#" value ="<?=$header_social_media_gmail?>" name="rollback_social_media_gmail" class="rollback_social_media_gmail"/></td>
+    <td><input type="text" placeholder="#" value ="<?php echo $header_social_media_gmail; ?>" name="rollback_social_media_gmail" class="rollback_social_media_gmail"/></td>
     <td><input type="submit" class="button-primary rollback_social_media_gmail_button updated_true" value='Update'></td>
   </tr>
 
   <tr>
     <td><h3>GitHub: </h3></td>
-    <td><input type="text" placeholder="#" value ="<?=$header_social_media_github?>" name="rollback_social_media_github" class="rollback_social_media_github"/></td>
+    <td><input type="text" placeholder="#" value ="<?php echo $header_social_media_github; ?>" name="rollback_social_media_github" class="rollback_social_media_github"/></td>
     <td><input type="submit" class="button-primary rollback_social_media_github_button updated_true" value='Update'></td>
   </tr>
 
   <tr>
     <td><h3>Facebook:</h3> </td>
-    <td><input type="text" placeholder="#" value ="<?=$header_social_media_facebook?>" name="rollback_social_media_facebook" class="rollback_social_media_facebook"/></td>
+    <td><input type="text" placeholder="#" value ="<?php echo $header_social_media_facebook;?>" name="rollback_social_media_facebook" class="rollback_social_media_facebook"/></td>
     <td><input type="submit" class="button-primary rollback_social_media_facebook_button updated_true" value='Update'></td>
   </tr>
 
   <tr>
     <td><h3>LinkedIn:</h3> </td>
-    <td><input type="text" placeholder="#" value ="<?=$header_social_media_linkedin?>" name="rollback_social_media_linkedin" class="rollback_social_media_linkedin"/></td>
+    <td><input type="text" placeholder="#" value ="<?php echo $header_social_media_linkedin; ?>" name="rollback_social_media_linkedin" class="rollback_social_media_linkedin"/></td>
     <td><input type="submit" class="button-primary rollback_social_media_linkedin_button updated_true" value='Update'></td>
   </tr>
 
   <tr>
     <td><h3>Pinterest:</h3> </td>
-    <td><input type="text" placeholder="#" value ="<?=$header_social_media_pinterest?>" name="rollback_social_media_pinterest" class="rollback_social_media_pinterest"/></td>
+    <td><input type="text" placeholder="#" value ="<?php echo $header_social_media_pinterest; ?>" name="rollback_social_media_pinterest" class="rollback_social_media_pinterest"/></td>
     <td><input type="submit" class="button-primary rollback_social_media_pinterest_button updated_true" value='Update'></td>
   </tr>
 
   <tr>
     <td><h3>YouTube: </h3></td>
-    <td><input type="text" placeholder="#" value ="<?=$header_social_media_youtube?>" name="rollback_social_media_youtube" class="rollback_social_media_youtube"/></td>
+    <td><input type="text" placeholder="#" value ="<?php echo $header_social_media_youtube;?>" name="rollback_social_media_youtube" class="rollback_social_media_youtube"/></td>
     <td><input type="submit" class="button-primary rollback_social_media_youtube_button updated_true" value='Update'></td>
   </tr>
 
@@ -119,10 +119,10 @@ $header_social_media_youtube = get_option('rollback_social_media_youtube');
 <script>
 <?php  
 if(strlen($blog_name_widgets) > 0){?>
-    $("select.blog_name_widgets").val('<?=$blog_name_widgets?>').change();
+    $("select.blog_name_widgets").val('<?php echo $blog_name_widgets; ?>').change();
 <?php
 } if(strlen($blog_slogan_widgets) > 0){?>
-  $("select.blog_slogan_widgets").val('<?=$blog_slogan_widgets?>').change();
+  $("select.blog_slogan_widgets").val('<?php echo $blog_slogan_widgets; ?>').change();
 <?php
 } ?>
 

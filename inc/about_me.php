@@ -69,32 +69,32 @@ class ctUp_ads extends WP_Widget {
         if ( isset( $instance[ 'about_title' ] ) )
         $about_title = $instance[ 'about_title' ];
         else
-        $about_title = __( 'About Me Title', 'about_me_domain' );
+        $about_title = __( 'About Me Title', 'rollback-blog' );
     
         if ( isset( $instance[ 'detail' ] ) )
         $detail = $instance[ 'detail' ];
         else
-        $detail = __( 'About Me Detail', 'about_me_domain' );
+        $detail = __( 'About Me Detail', 'rollback-blog' );
 
         if ( isset( $instance[ 'image_uri' ] ) )
         $image_url = $instance[ 'image_uri' ];
         else
-        $image_url = __( '', 'about_me_domain' );
+        $image_url = __( '', 'rollback-blog' );
 ?>
 	<p>
     <!-- ======About Me Title =====-->
-	<label for="<?php echo $this->get_field_id( 'about_title' ); ?>"><?php _e( 'About Title:' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'about_title' ); ?>"><?php __( 'About Title:', 'rollback-blog' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'about_title' ); ?>" name="<?php echo $this->get_field_name( 'about_title' ); ?>" type="text" value="<?php echo esc_attr( $about_title ); ?>" />
 	<!-- ======About Me Detail=====-->
-	<label for="<?php echo $this->get_field_id( 'detail' ); ?>"><?php _e( 'About Detail:' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'detail' ); ?>"><?php __( 'About Detail:', 'rollback-blog' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'detail' ); ?>" name="<?php echo $this->get_field_name( 'detail' ); ?>" type="text" value="<?php echo esc_attr( $detail); ?>" />
 	
 	</p>
     <p>
-    <label for="<?php echo $this->get_field_id( 'image_uri' ); ?>"><?php _e( 'Image:' ); ?></label>
-    <img class="<?= $this->id ?>_img" type="file" src="<?= (!empty($image_url)) ? $image_url : ''; ?>" style="margin:0;padding:0;max-width:100%;display:block"/>
-    <input type="text" class="widefat <?= $this->id ?>_url" name="<?= $this->get_field_name( 'image_uri' ); ?>" value="<?php echo esc_attr( $image_url); ?>" style="margin-top:5px;" />
-    <input type="button" id="<?= $this->id ?>" class="button button-primary js_custom_upload_media" value="Upload Image" style="margin-top:5px;" />
+    <label for="<?php echo $this->get_field_id( 'image_uri' ); ?>"><?php __( 'Image:', 'rollback-blog' ); ?></label>
+    <img class="<?php echo $this->id ?>_img" type="file" src="<?php echo (!empty($image_url)) ? $image_url : ''; ?>" style="margin:0;padding:0;max-width:100%;display:block"/>
+    <input type="text" class="widefat <?php echo $this->id ?>_url" name="<?php echo $this->get_field_name( 'image_uri' ); ?>" value="<?php echo esc_attr( $image_url); ?>" style="margin-top:5px;" />
+    <input type="button" id="<?php echo $this->id ?>" class="button button-primary js_custom_upload_media" value="Upload Image" style="margin-top:5px;" />
     </p>
 
 <?php

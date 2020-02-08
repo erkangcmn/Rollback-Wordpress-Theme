@@ -79,7 +79,7 @@ input[type=text]:focus {
   }
 }
     </style>
-    <title>Sayfa Bulunamadı</title>
+<?php add_theme_support( 'title-tag' ); ?>
 </head>
 <body>
 <div class="notfound-copy mt-5">

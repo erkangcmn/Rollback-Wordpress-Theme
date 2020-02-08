@@ -35,7 +35,7 @@ $rollback_footer_copyright = get_option('rollback_footer_copyright');
 <table>
 <tr>
     <td><h3>Copyright:</h3></td>
-    <td><input type="text" placeholder="©" value ="<?=$rollback_footer_copyright?>" name="rollback_footer_copyright" class="rollback_footer_copyright"/></td>
+    <td><input type="text" placeholder="©" value ="<?php echo $rollback_footer_copyright;?>" name="rollback_footer_copyright" class="rollback_footer_copyright"/></td>
     <td><input type="submit" class="button-primary rollback_footer_copyright_button updated_true" value='Update'></td>
 </tr>
 </table>
@@ -46,7 +46,7 @@ $rollback_footer_copyright = get_option('rollback_footer_copyright');
 /* Footer Blog Name */
 <?php  
 if(strlen($blog_name_footer_widgets) > 0){?>
-    $("select.blog_name_footer_widgets").val('<?=$blog_name_footer_widgets?>').change();
+    $("select.blog_name_footer_widgets").val('<?php echo $blog_name_footer_widgets;?>').change();
 <?php } ?>
 
 /* Footer Blog Name */

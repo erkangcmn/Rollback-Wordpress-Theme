@@ -35,52 +35,40 @@
 }
 
 /* =============== Comments ============== */
-
-h3#comments{
-    font-size: 20px;
+.comment-body{
+    border-bottom: 1px #808080 solid;
+    margin-bottom: 10px;
+}
+.comment-author img{
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.comment-author .fn{
     font-weight: 600;
 }
-
-ol.commentlist li{
-    background-color: #ddd;
-    margin-bottom: 20px;
-    padding: 10px 12px 10px 12px;
-    border-radius: 8px;
+.commentmetadata a{
+    color:#808080;
 }
-ol.commentlist p{
-    font-size: 1.2em;
-
+.commentmetadata:hover a{
+    text-decoration: none;
+    color:#808080;
 }
-
-ol.commentlist li cite{
-font-weight: bold;
-font-size: 18px;
+.comment-form{
+    width:80%;
 }
-ol.commentlist li .small{
-font-size: 14px;
-background-color: #ddd;
-padding:5px 8px 5px 8px;
-
-border-radius:9px;
-font-weight:600;
-color:#808080;
-text-decoration: none;
+.comment-form-author, .comment-form-email,.comment-form-url, .comment-form-comment{
+    display:flex;
 }
-
-#respond{
-    background-color: #ddd;
-    margin-bottom: 20px;
-    padding: 10px 12px 10px 12px;
-    border-radius: 8px;
+.comment-form-author label, .comment-form-email label,.comment-form-url label{
+    flex:2;
+}
+.comment-form-author input, .comment-form-email input,.comment-form-url input, .comment-form-comment input{
+    flex: 6;
+    margin-right: 60px;
+}
+.comment-form-comment label{
+    flex:0.7;
 }
 
 
-.navigation{
-    display: flex;
-}
-.alignleft{
-    flex: 1;
-}
-.alignright{
-    flex: 1;
-}

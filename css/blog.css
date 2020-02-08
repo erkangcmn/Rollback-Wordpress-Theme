@@ -200,6 +200,19 @@ h2,h3,h4,h5,h6{
 }
 
 
+/* =========== Mobil css =========== */
+.mobil_navbar{
+    padding: 0px 24px 10px 24px;
+}
+.mobil_drop{
+    margin-left:50px;
+}
+.mobil_drop a{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
 
 
 /* Load more*/

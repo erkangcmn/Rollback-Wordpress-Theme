@@ -143,10 +143,11 @@
 @media only screen and (max-width: 600px) {
   
 #custom-search-input {
-  margin:0;
-  margin-top: 10px;
+  margin:10px 0px 10px 0px;
   padding: 0;
-  width:95%;
+  width:100%;
+  border: 1px black solid;
+  border-radius: 10px;
 
 }
 
@@ -156,9 +157,9 @@
   padding-left: 15px;
       /* IE7-8 doesn't have border-radius, so don't indent the padding */
   margin-bottom: 0;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 }
 
 #custom-search-input button {
@@ -176,7 +177,7 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  color:#D9230F;
+  color:blue;
   cursor: unset;
   z-index: 2;
 }

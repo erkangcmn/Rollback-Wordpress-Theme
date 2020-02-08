@@ -14,9 +14,9 @@ function hstngr_register_widget() {
 	// widget ID
 	'rollback_trends',
 	// widget name
-	__('Rollback - Trends', ' rollback_trends_domain'),
+	__('Rollback - Trends', ' rollback-blog'),
 	// widget description
-	array( 'description' => __( 'Rollback trends views', 'rollback_trends_domain' ), )
+	array( 'description' => __( 'Rollback trends views', 'rollback-blog' ), )
 	);
 	}
 
@@ -61,16 +61,16 @@ function hstngr_register_widget() {
 	if ( isset( $instance[ 'title' ] ) )
 	$title = $instance[ 'title' ];
 	else
-	$title = __( 'Trends', 'rollback_trends_domain' );
+	$title = __( 'Trends', 'rollback-blog' );
 	if ( isset( $instance[ 'trends_number' ] ) )
 	$trends_number= $instance[ 'trends_number' ];
 	else
-	$trends_number = __( '4', 'rollback_trends_domain' );
+	$trends_number = __( '4', 'rollback-blog' );
 	?>
 	<p>
-	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php __( 'Title:', 'rollback-blog' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-	<label for="<?php echo $this->get_field_id( 'trends_number' ); ?>"><?php _e( 'Trends Number:' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'trends_number' ); ?>"><?php __( 'Trends Number:', 'rollback-blog' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'trends_number' ); ?>" name="<?php echo $this->get_field_name( 'trends_number' ); ?>" type="text" value="<?php echo esc_attr( $trends_number ); ?>" />
 	
 	</p>
@@ -108,9 +108,9 @@ function hstngr_register_widget() {
 		// widget ID
 		'social_media_widget',
 		// widget name
-		__('Rollback - Social Media Ikons', ' social_media_domain'),
+		__('Rollback - Social Media Ikons', ' rollback-blog'),
 		// widget description
-		array( 'description' => __( 'Rollback social media views', 'social_media_domain' ), )
+		array( 'description' => __( 'Rollback social media views', 'rollback-blog' ), )
 		);
 		}
 	
@@ -176,75 +176,75 @@ function hstngr_register_widget() {
 		if ( isset( $instance[ 'title' ] ) )
 		$title = $instance[ 'title' ];
 		else
-		$title = __( 'Social Media', 'social_media_domain' );
+		$title = __( 'Social Media', 'rollback-blog' );
 
 		if ( isset( $instance[ 'instagram' ] ) )
 		$instagram = $instance[ 'instagram' ];
 		else
-		$instagram = __( '#', 'social_media_domain' );
+		$instagram = __( '#', 'rollback-blog' );
 
 		if ( isset( $instance[ 'twitter' ] ) )
 		$twitter = $instance[ 'twitter' ];
 		else
-		$twitter = __( '#', 'social_media_domain' );
+		$twitter = __( '#', 'rollback-blog' );
 
 		if ( isset( $instance[ 'gmail' ] ) )
 		$gmail = $instance[ 'gmail' ];
 		else
-		$gmail= __( '#', 'social_media_domain' );
+		$gmail= __( '#', 'rollback-blog' );
 
 		if ( isset( $instance[ 'github' ] ) )
 		$github = $instance[ 'github' ];
 		else
-		$github = __( '#', 'social_media_domain' );
+		$github = __( '#', 'rollback-blog' );
 
 		if ( isset( $instance[ 'facebook' ] ) )
 		$facebook = $instance[ 'facebook' ];
 		else
-		$facebook = __( '#', 'social_media_domain' );
+		$facebook = __( '#', 'rollback-blog' );
 
 		if ( isset( $instance[ 'linkedin' ] ) )
 		$linkedin = $instance[ 'linkedin' ];
 		else
-		$linkedin = __( '#', 'social_media_domain' );
+		$linkedin = __( '#', 'rollback-blog' );
 
 		if ( isset( $instance[ 'pinterest' ] ) )
 		$pinterest = $instance[ 'pinterest' ];
 		else
-		$pinterest = __( '#', 'social_media_domain' );
+		$pinterest = __( '#', 'rollback-blog' );
 
 		if ( isset( $instance[ 'youtube' ] ) )
 		$youtube = $instance[ 'youtube' ];
 		else
-		$youtube = __( '#', 'social_media_domain' );
+		$youtube = __( '#', 'rollback-blog' );
 
 		?>
 		<p>
-		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php __('Title', 'rollback-blog'); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		
-		<label for="<?php echo $this->get_field_id( 'instagram' ); ?>"><?php _e( 'Instagram:' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'instagram' ); ?>"><?php echo ( 'Instagram:' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'instagram' ); ?>" name="<?php echo $this->get_field_name( 'instagram' ); ?>" type="text" value="<?php echo esc_attr( $instagram ); ?>" />
 		
-		<label for="<?php echo $this->get_field_id( 'twitter' ); ?>"><?php _e( 'Twitter:' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'twitter' ); ?>"><?php echo ( 'Twitter:' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'twitter' ); ?>" name="<?php echo $this->get_field_name( 'twitter' ); ?>" type="text" value="<?php echo esc_attr( $twitter ); ?>" />
 		
-		<label for="<?php echo $this->get_field_id( 'gmail' ); ?>"><?php _e( 'Gmail:' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'gmail' ); ?>"><?php echo ( 'Gmail:' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'gmail' ); ?>" name="<?php echo $this->get_field_name( 'gmail' ); ?>" type="text" value="<?php echo esc_attr( $gmail ); ?>" />
 		
-		<label for="<?php echo $this->get_field_id( 'github' ); ?>"><?php _e( 'Github:' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'github' ); ?>"><?php echo ( 'Github:' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'github' ); ?>" name="<?php echo $this->get_field_name( 'github' ); ?>" type="text" value="<?php echo esc_attr( $github ); ?>" />
 		
-		<label for="<?php echo $this->get_field_id( 'facebook' ); ?>"><?php _e( 'Facebook:' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'facebook' ); ?>"><?php echo ( 'Facebook:' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'facebook' ); ?>" name="<?php echo $this->get_field_name( 'facebook' ); ?>" type="text" value="<?php echo esc_attr( $facebook ); ?>" />
 		
-		<label for="<?php echo $this->get_field_id( 'linkedin' ); ?>"><?php _e( 'LinkedIn:' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'linkedin' ); ?>"><?php echo ( 'LinkedIn:' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'linkedin' ); ?>" name="<?php echo $this->get_field_name( 'linkedin' ); ?>" type="text" value="<?php echo esc_attr( $linkedin ); ?>" />
 		
-		<label for="<?php echo $this->get_field_id( 'pinterest' ); ?>"><?php _e( 'Pinterest:' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'pinterest' ); ?>"><?php echo ( 'Pinterest:' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'pinterest' ); ?>" name="<?php echo $this->get_field_name( 'pinterest' ); ?>" type="text" value="<?php echo esc_attr( $pinterest ); ?>" />
 		
-		<label for="<?php echo $this->get_field_id( 'youtube' ); ?>"><?php _e( 'YouTube:' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'youtube' ); ?>"><?php echo ( 'YouTube:' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'youtube' ); ?>" name="<?php echo $this->get_field_name( 'youtube' ); ?>" type="text" value="<?php echo esc_attr( $youtube ); ?>" />
 		
 		</p>
@@ -285,9 +285,9 @@ function rollback_search_widget() {
 	// widget ID
 	'rollback_search',
 	// widget name
-	__('Rollback - Search Box', ' rollback_search_domain'),
+	__('Rollback - Search Box', ' rollback-blog'),
 	// widget description
-	array( 'description' => __( 'Rollback search box', 'rollback_search_domain' ), )
+	array( 'description' => __( 'Rollback search box', 'rollback-blog' ), )
 	);
 	}
 
@@ -333,11 +333,11 @@ function rollback_search_widget() {
 	if ( isset( $instance[ 'rollback_search_box' ] ) )
 	$rollback_search = $instance[ 'rollback_search_box' ];
 	else
-	$rollback_search = __( 'Search...', 'rollback_search_domain' );
+	$rollback_search = __( 'Search...', 'rollback-blog' );
 	?>
 	<p>
 
-	<label for="<?php echo $this->get_field_id( 'rollback_search_box' ); ?>"><?php _e( 'Search Value:' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'rollback_search_box' ); ?>"><?php __('Search Value:', 'rollback-blog'); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'rollback_search_box' ); ?>" name="<?php echo $this->get_field_name( 'rollback_search_box' ); ?>" type="text" value="<?php echo esc_attr( $rollback_search ); ?>" />
 	
 	</p>

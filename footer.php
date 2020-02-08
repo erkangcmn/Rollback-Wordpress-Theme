@@ -12,7 +12,7 @@ justify-content:space-around;
 flex-wrap:wrap">
 	<div class="footer_name">
 
-	<a href="<?php bloginfo('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>  
+	<a href="<?php esc_url('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>  
 	
 	</div>    
 

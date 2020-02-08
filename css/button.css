@@ -95,9 +95,10 @@
   background-color: #dcdcdc;
   border:0;
 }
-
 /* =================== Dropdawn ================= */
-  /* Anasayfa netx and previous button*/
+
+
+/* =================== Home page next and previous ================= */
 .next_prev{
   overflow: hidden;
 }
@@ -137,3 +138,15 @@
   color:black;
 
 }
+/* =================== Home page next and previous ================= */
+
+
+/* =================== Mobil dropdawn ================= */
+.nav-link{
+  border: 1px blue solid;
+  margin: 8px 0px 0px 0px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+}
+/* =================== Mobil dropdawn ================= */

@@ -2,16 +2,17 @@
 function register_my_menus() {
 	register_nav_menus(
 	  array(
-		'header_menu' => __( 'Header Menu' ),
-		'404-menu' => __( '404 Menu' ),
-		'footer-menu' => __( 'Footer Menu' ),
+		'header_menu' => __( 'Header Menu', 'rollback-blog' ),
+		'404-menu' => __( '404 Menu', 'rollback-blog' ),
+		'footer-menu' => __( 'Footer Menu', 'rollback-blog' ),
+		'mobil-menu' => __( 'Mobil Menu', 'rollback-blog' )
 	  )
 	);
 	
   }
   add_action( 'init', 'register_my_menus' );
 
-
+/*  ------------------ Header Menu ------------------*/
 function header_menus() {
 	$menu_name = 'header_menu'; 
 	if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
@@ -19,7 +20,7 @@ function header_menus() {
 		$menu_items = wp_get_nav_menu_items($menu->term_id);
 
 		$menu_list = "";
-		echo '<div class="menus-flex">';
+		echo '<div class="d-none d-md-block d-lg-nonek"><div class="menus-flex">';
 		$ust_menu = false;
 		foreach ((array) $menu_items as $key => $menu_item) {
 			$mip = $menu_item->menu_item_parent;
@@ -35,31 +36,70 @@ function header_menus() {
 					echo '</div></div>';
 					$ust_menu = false;
 				}
-
-				echo '
-				<div class="dropdown " style="text-align:center;margin:auto;padding:20px">
-				<span  data-toggle="dropdown"><a class="top_menu">'.$title.'</a></span>
-				<div class="dropdown-content" style="margin-top:5px">';		
+				echo"
+				<div class='dropdown' style='text-align:center;margin:auto;padding:20px'>	
+				<span><a href='$url'class='top_menu'>$title</a></span>
+				<div class='dropdown-content' style='margin-top:5px'>";	
 				$ust_menu = true;
 			}
 			else{
 				echo "<a href='$url' class='dropdown-item'>$title</a>";
+			}					
+		}	
+		echo'</div></div></div></div>';
+	} else {}
+}
+/*  ------------------ Header Menu ------------------*/
+
+
+/*  ------------------ Mobil Menu ------------------*/
+function mobil_menus() {
+	$menu_name = 'mobil-menu'; 
+	if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
+		$menu = wp_get_nav_menu_object($locations[$menu_name]);
+		$menu_items = wp_get_nav_menu_items($menu->term_id);
+
+		$menu_list = "";
+
+		echo '<div class="col-12 col-md-12 col-lg-12"><ul class="navbar-nav mr-auto">';
+
+		foreach ((array) $menu_items as $key => $menu_item) {
+			$mip = $menu_item->menu_item_parent;
+			$title = $menu_item->title;
+			$url = $menu_item->url;
+			$menu_order = $menu_item->menu_order;
+
+
+			$menu_list .= "<b><a href='$url'>$title </a></b>";
+
+			if($mip == 0){			
+				
+				echo"  <li class='nav-item active'>
+					<a class='nav-link' href='$url'>$title</a>
+					</li>";
+
+			}
+			else{	
+				
+				echo "<li class='nav-item mobil_drop'>
+					<a class='nav-link' href='$url'>$title</a>
+					</li>";
 			}		
 			
 		}	
 
-		echo'</div></div></div>';
+		echo'</ul></div>';
 
 
 	  
 	
-	} else {
-
-	}
+	} else {}
 
 }
+/* ------------------ Mobil Menu ------------------*/
 
-/* ------------------404 Menus--------------- */
+
+/*  ------------------ 404 Menu ------------------*/
 function error_menus() {
 	$menu_name = '404-menu'; 
 	if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
@@ -85,7 +125,10 @@ function error_menus() {
 	}
 	echo "<div class='row mt-5 mb-5'><div class='col-3' ></div>".$menu_list." <div class='col-3' ></div></div>";
 }
-/* ------------------Footer Menus--------------- */
+/*  ------------------ 404 Menu ------------------*/
+
+
+/*  ------------------ Footer Menu ------------------*/
 function footer_menus() {
 	$menu_name = 'footer-menu'; 
 	if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
@@ -110,7 +153,5 @@ function footer_menus() {
 	}
 	echo "<ul> ".$menu_list."</ul> ";
 }
-
-
-
+/*  ------------------ Footer Menu ------------------*/
 ?>
