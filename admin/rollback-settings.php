@@ -21,7 +21,7 @@ $header_social_media_youtube = get_option('rollback_social_media_youtube');
 <table>
 <tr>
 <td><h1> Rollback Header Settings </h1> </td>
- <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px"> Güncellendi</span></h4>
+ <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px">Updated</span></h4>
  </tr>
 </table>
 

@@ -14,9 +14,9 @@ function hstngr_register_widget() {
 	// widget ID
 	'rollback_trends',
 	// widget name
-	__('Rollback - Trends', ' rollback-blog'),
+	__('Rollback - Trends', 'rollback-wordpress-theme'),
 	// widget description
-	array( 'description' => __( 'Rollback trends views', 'rollback-blog' ), )
+	array( 'description' => __( 'Rollback trends views', 'rollback-wordpress-theme' ), )
 	);
 	}
 
@@ -61,16 +61,16 @@ function hstngr_register_widget() {
 	if ( isset( $instance[ 'title' ] ) )
 	$title = $instance[ 'title' ];
 	else
-	$title = __( 'Trends', 'rollback-blog' );
+	$title = __( 'Trends', 'rollback-wordpress-theme' );
 	if ( isset( $instance[ 'trends_number' ] ) )
 	$trends_number= $instance[ 'trends_number' ];
 	else
-	$trends_number = __( '4', 'rollback-blog' );
+	$trends_number = __( '4', 'rollback-wordpress-theme' );
 	?>
 	<p>
-	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php __( 'Title:', 'rollback-blog' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php __( 'Title:', 'rollback-wordpress-theme' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-	<label for="<?php echo $this->get_field_id( 'trends_number' ); ?>"><?php __( 'Trends Number:', 'rollback-blog' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'trends_number' ); ?>"><?php __( 'Trends Number:', 'rollback-wordpress-theme' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'trends_number' ); ?>" name="<?php echo $this->get_field_name( 'trends_number' ); ?>" type="text" value="<?php echo esc_attr( $trends_number ); ?>" />
 	
 	</p>
@@ -108,9 +108,9 @@ function hstngr_register_widget() {
 		// widget ID
 		'social_media_widget',
 		// widget name
-		__('Rollback - Social Media Ikons', ' rollback-blog'),
+		__('Rollback - Social Media Ikons', ' rollback-wordpress-theme'),
 		// widget description
-		array( 'description' => __( 'Rollback social media views', 'rollback-blog' ), )
+		array( 'description' => __( 'Rollback social media views', 'rollback-wordpress-theme' ), )
 		);
 		}
 	
@@ -176,51 +176,51 @@ function hstngr_register_widget() {
 		if ( isset( $instance[ 'title' ] ) )
 		$title = $instance[ 'title' ];
 		else
-		$title = __( 'Social Media', 'rollback-blog' );
+		$title = __( 'Social Media', 'rollback-wordpress-theme' );
 
 		if ( isset( $instance[ 'instagram' ] ) )
 		$instagram = $instance[ 'instagram' ];
 		else
-		$instagram = __( '#', 'rollback-blog' );
+		$instagram = __( '#', 'rollback-wordpress-theme' );
 
 		if ( isset( $instance[ 'twitter' ] ) )
 		$twitter = $instance[ 'twitter' ];
 		else
-		$twitter = __( '#', 'rollback-blog' );
+		$twitter = __( '#', 'rollback-wordpress-theme' );
 
 		if ( isset( $instance[ 'gmail' ] ) )
 		$gmail = $instance[ 'gmail' ];
 		else
-		$gmail= __( '#', 'rollback-blog' );
+		$gmail= __( '#', 'rollback-wordpress-theme' );
 
 		if ( isset( $instance[ 'github' ] ) )
 		$github = $instance[ 'github' ];
 		else
-		$github = __( '#', 'rollback-blog' );
+		$github = __( '#', 'rollback-wordpress-theme' );
 
 		if ( isset( $instance[ 'facebook' ] ) )
 		$facebook = $instance[ 'facebook' ];
 		else
-		$facebook = __( '#', 'rollback-blog' );
+		$facebook = __( '#', 'rollback-wordpress-theme' );
 
 		if ( isset( $instance[ 'linkedin' ] ) )
 		$linkedin = $instance[ 'linkedin' ];
 		else
-		$linkedin = __( '#', 'rollback-blog' );
+		$linkedin = __( '#', 'rollback-wordpress-theme' );
 
 		if ( isset( $instance[ 'pinterest' ] ) )
 		$pinterest = $instance[ 'pinterest' ];
 		else
-		$pinterest = __( '#', 'rollback-blog' );
+		$pinterest = __( '#', 'rollback-wordpress-theme' );
 
 		if ( isset( $instance[ 'youtube' ] ) )
 		$youtube = $instance[ 'youtube' ];
 		else
-		$youtube = __( '#', 'rollback-blog' );
+		$youtube = __( '#', 'rollback-wordpress-theme' );
 
 		?>
 		<p>
-		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php __('Title', 'rollback-blog'); ?></label>
+		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php __('Title', 'rollback-wordpress-theme'); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		
 		<label for="<?php echo $this->get_field_id( 'instagram' ); ?>"><?php echo ( 'Instagram:' ); ?></label>
@@ -285,9 +285,9 @@ function rollback_search_widget() {
 	// widget ID
 	'rollback_search',
 	// widget name
-	__('Rollback - Search Box', ' rollback-blog'),
+	__('Rollback - Search Box', 'rollback-wordpress-theme'),
 	// widget description
-	array( 'description' => __( 'Rollback search box', 'rollback-blog' ), )
+	array( 'description' => __( 'Rollback search box', 'rollback-wordpress-theme' ), )
 	);
 	}
 
@@ -333,11 +333,11 @@ function rollback_search_widget() {
 	if ( isset( $instance[ 'rollback_search_box' ] ) )
 	$rollback_search = $instance[ 'rollback_search_box' ];
 	else
-	$rollback_search = __( 'Search...', 'rollback-blog' );
+	$rollback_search = __( 'Search...', 'rollback-wordpress-theme' );
 	?>
 	<p>
 
-	<label for="<?php echo $this->get_field_id( 'rollback_search_box' ); ?>"><?php __('Search Value:', 'rollback-blog'); ?></label>
+	<label for="<?php echo $this->get_field_id( 'rollback_search_box' ); ?>"><?php __('Search Value:', 'rollback-wordpress-theme'); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'rollback_search_box' ); ?>" name="<?php echo $this->get_field_name( 'rollback_search_box' ); ?>" type="text" value="<?php echo esc_attr( $rollback_search ); ?>" />
 	
 	</p>

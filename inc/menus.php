@@ -2,10 +2,10 @@
 function register_my_menus() {
 	register_nav_menus(
 	  array(
-		'header_menu' => __( 'Header Menu', 'rollback-blog' ),
-		'404-menu' => __( '404 Menu', 'rollback-blog' ),
-		'footer-menu' => __( 'Footer Menu', 'rollback-blog' ),
-		'mobil-menu' => __( 'Mobil Menu', 'rollback-blog' )
+		'header_menu' => __( 'Header Menu', 'rollback-wordpress-theme' ),
+		'404-menu' => __( '404 Menu', 'rollback-wordpress-theme' ),
+		'footer-menu' => __( 'Footer Menu', 'rollback-wordpress-theme' ),
+		'mobil-menu' => __( 'Mobil Menu', 'rollback-wordpress-theme' )
 	  )
 	);
 	

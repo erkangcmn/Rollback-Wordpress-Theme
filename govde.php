@@ -1,6 +1,6 @@
 
 
-<!-- ========================GÖVDE================================== -->
+<!-- ========================GOVDE================================== -->
 <div class="govde">
   <div class="container">
 
@@ -138,10 +138,11 @@ if($i == 2 || $i == 4 || $i == 5 || $i == 6  ){?>
 
 
 <?php }}}} endwhile; ?>
+
 <?php if(get_option('blog_home_page_widgets') == 'next_prev'){?>
 <div class="next_prev col-12">
   <div class="sol_button">
-    <?php previous_posts_link(); ?>
+    <?php previous_posts_link();  ?>
   </div>
   <div class="sag_button">
     <?php next_posts_link(); ?>

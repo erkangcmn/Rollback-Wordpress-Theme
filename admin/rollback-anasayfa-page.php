@@ -11,7 +11,7 @@ $blog_home_page_widgets = get_option('blog_home_page_widgets');
 <tr>
 <td><h1>Home Page Settings</h1> </td>
 
- <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px"> Güncellendi</span></h4>
+ <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px">Updated</span></h4>
  </tr>
 </table>
 

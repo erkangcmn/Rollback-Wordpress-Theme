@@ -23,7 +23,7 @@ flex-wrap:wrap">
 <div class="row">
 <div class="col-12 mt-5">
 <?php
-if(get_option('rollback_footer_copyright') == '©' || trim(get_option('rollback_footer_copyright')) == ''){}
+if(get_option('rollback_footer_copyright') == 'Copyright' || trim(get_option('rollback_footer_copyright')) == ''){}
 else{
 ?>
 <p style="text-align:center;"><?php echo get_option('rollback_footer_copyright'); ?> </p>
@@ -33,10 +33,10 @@ else{
 </div>
 
 </body>   
-<script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback/js/jquery-3.4.1.slim.min.js"></script> 
-<script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback/js/popper.min.js"></script> 
-<script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback/js/bootstrap.min.js"></script> 
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/js/jquery-3.4.1.slim.min.js"></script> 
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/js/popper.min.js"></script> 
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/js/bootstrap.min.js"></script> 
 
-<script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback/js/govde.js"></script> 
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/js/govde.js"></script> 
 
 </html>

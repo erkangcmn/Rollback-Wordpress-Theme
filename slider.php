@@ -7,7 +7,7 @@
             if(get_option('header_code') == '#' || trim(get_option('header_code')) == ''){}
             else{ $i=get_option('header_code');} 
             echo do_shortcode($i);
-                
+            the_tags();
             ?>
 
 

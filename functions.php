@@ -1,16 +1,29 @@
+<?php if(!empty($_SERVER['SCRIPT_FILENAME']) && 'wayne-social-media.php' == basename($_SERVER['SCRIPT_FILENAME'])) : ?>  	
+	<?php die('Something went wrong. ERR4004'); ?>  
+<?php endif; ?>
 <?php 
+
+
+add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'title-tag' );
+if ( ! isset( $content_width ) ) {
+	$content_width = 600;
+}
+
 //======== Admin menu add ========
 
-add_action( 'admin_menu', 'register_rollback_theme_menu_page' );
 	
-function register_rollback_theme_menu_page(){
+function add_rollback_theme_page(){
+
 	add_menu_page( 'Rollback Admin Page','Rollback Admin','manage_options','rollback_theme_menu_page','rollback_theme_menu_page',plugins_url( 'img/icon.png' ), 61);
+	
 	add_submenu_page( 'rollback_theme_menu_page', 'Rollback Admin Page', 'Header Admin Page','manage_options', 'rollback_theme_menu_page');
-
 	add_submenu_page( 'rollback_theme_menu_page', 'Anasayfa Admin Page', 'Anasayfa Admin Page','manage_options','rollback-anasayfa' , 'rollback_anasayfa_page');
-
+	
 	add_submenu_page( 'rollback_theme_menu_page', 'Footer Admin Page', 'Footer Admin Page','manage_options','rollback-footer' , 'rollback_footer_page');
 }
+add_action( 'admin_menu', 'add_rollback_theme_page' );
+
 
 
 function rollback_theme_menu_page(){

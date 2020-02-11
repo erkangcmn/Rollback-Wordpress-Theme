@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html <?php language_attributes(); ?>>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,24 +8,21 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/css/wordpress.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/css/blog.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/css/search.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/css/button.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/css/social.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/css/single.css">
 
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/blog.css">
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/search.css">
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/button.css">
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/social.css">
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/rollback/css/single.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <?php wp_head();
-    add_theme_support( 'title-tag' ); ?>
-
-  
-
-
+    <?php wp_head(); ?>
 
 </head>
-<body style="background:#f5f5f5">
+<body style="background:#f5f5f5" <?php body_class(); ?>>
 <?php wp_footer();?>
 <div class="ust">
   <div class="contac"> 

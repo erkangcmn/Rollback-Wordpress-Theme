@@ -21,10 +21,10 @@ if ( ! empty( $categories ) ) {
 
 }
 elseif(is_author()){
-    echo"Yazar Sayfası";
+   __('Author page', 'rollback-wordpress-theme');
 }
 elseif(is_tag()){
-    echo"Etiket Sayfası";
+  __('Tag page', 'rollback-wordpress-theme');
 }?>
 <div class="site">
 <div class="row">

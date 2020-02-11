@@ -14,7 +14,7 @@ $rollback_footer_copyright = get_option('rollback_footer_copyright');
 <tr>
 <td><h1>Roolback Footer Settings</h1> </td>
 
- <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px"> Güncellendi</span></h4>
+ <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px">Updated</span></h4>
  </tr>
 </table>
 
@@ -35,7 +35,7 @@ $rollback_footer_copyright = get_option('rollback_footer_copyright');
 <table>
 <tr>
     <td><h3>Copyright:</h3></td>
-    <td><input type="text" placeholder="©" value ="<?php echo $rollback_footer_copyright;?>" name="rollback_footer_copyright" class="rollback_footer_copyright"/></td>
+    <td><input type="text" placeholder="Copyright" value ="<?php echo $rollback_footer_copyright;?>" name="rollback_footer_copyright" class="rollback_footer_copyright"/></td>
     <td><input type="submit" class="button-primary rollback_footer_copyright_button updated_true" value='Update'></td>
 </tr>
 </table>

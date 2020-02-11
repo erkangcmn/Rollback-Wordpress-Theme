@@ -20,7 +20,8 @@ get_header(); ?>
  
         <?php if ( have_posts() ) : ?>
             <div class="alert alert-success mt-5">
-            <strong>"<?php the_search_query(); ?>"</strong> İçin Arama Sonuçları
+            
+                Search results for <strong>"<?php the_search_query(); ?>"</strong>
             </div><hr>
 
             <?php
@@ -33,7 +34,7 @@ get_header(); ?>
         <?php else : ?>
  
             <div class="alert alert-danger mt-5">
-            <strong>Üzgünüm</strong> Aradığınız Kelimeye Uygun İçerik Bulunamadı..
+            <strong>Sorry</strong> The Content You Searched Is Not Found...
             </div><hr>
 
  
