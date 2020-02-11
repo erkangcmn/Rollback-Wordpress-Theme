@@ -3,6 +3,8 @@
 <?php endif; ?>
 
 <?php 
+
+/* ================ HEADER ==================== */
 $header_code = get_option('header_code');
 
 $blog_name_widgets = get_option('blog_name_widgets');
@@ -17,13 +19,27 @@ $header_social_media_facebook = get_option('rollback_social_media_facebook');
 $header_social_media_linkedin= get_option('rollback_social_media_linkedin');
 $header_social_media_pinterest = get_option('rollback_social_media_pinterest');
 $header_social_media_youtube = get_option('rollback_social_media_youtube');
+/* ================ HEADER ==================== */
+
+
+/* ================ Homepage ==================== */
+$blog_home_page_widgets = get_option('blog_home_page_widgets');
+/* ================ Homepage ==================== */
+
+
+/* ================ Footer ==================== */
+$blog_name_footer_widgets = get_option('blog_name_footer_widgets');
+$rollback_footer_copyright = get_option('rollback_footer_copyright');
+/* ================ Footer ==================== */
 ?>
+<!-- ================ Footer ==================== -->
 <table>
 <tr>
 <td><h1> Rollback Header Settings </h1> </td>
- <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px">Updated</span></h4>
+ <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px"><span>Updated</span></h4>
  </tr>
 </table>
+
 
 
 <table>
@@ -114,9 +130,67 @@ $header_social_media_youtube = get_option('rollback_social_media_youtube');
   </tr>
 
 </table>
+<!-- ================ Header ==================== -->
 
+
+<!-- ================ HomePage ==================== -->
+<table>
+<tr>
+<td><h1>Home Page Settings</h1> </td>
+
+ <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px">Updated</span></h4>
+ </tr>
+</table>
+
+<table>
+<tr>
+  <td><h3>More Post</h3></td>
+  <td>
+  <select name="blog_home_page_widgets" class="blog_home_page_widgets">
+  <option value="next_prev">Next - Previous</option>
+  <option value="load_more">Load More</option>
+  </select>
+  </td>
+  <td><input type="submit" class="button-primary blog_home_page_widgets_button updated_true" value='Update'></td>
+</tr>
+</table>
+<!-- ================ HomePage ==================== -->
+
+
+<!-- ================ Footer ==================== -->
+<table>
+<tr>
+<td><h1>Roolback Footer Settings</h1> </td>
+
+ <td> <h4 class="admin_upload" style=" display: none;color:green;font-size:18px"><span>Updated</span></h4>
+ </tr>
+</table>
+
+<table>
+<tr>
+  <td><h3>Footer Blog Name</h3></td>
+  <td>
+  <select name="blog_name_footer_widgets" class="blog_name_footer_widgets">
+  <option value="enable">Enable</option>
+  <option value="disable">Disable</option>
+  </select>
+  </td>
+  <td><input type="submit" class="button-primary blog_name_footer_widgets_button updated_true" value='Update'></td>
+</tr>
+
+</table>
+
+<table>
+<tr>
+    <td><h3>Copyright:</h3></td>
+    <td><input type="text" placeholder="Copyright" value ="<?php echo $rollback_footer_copyright;?>" name="rollback_footer_copyright" class="rollback_footer_copyright"/></td>
+    <td><input type="submit" class="button-primary rollback_footer_copyright_button updated_true" value='Update'></td>
+</tr>
+</table>
+<!-- ================ Footer ==================== -->
 
 <script>
+/* __________________ Header __________________ */
 <?php  
 if(strlen($blog_name_widgets) > 0){?>
     $("select.blog_name_widgets").val('<?php echo $blog_name_widgets; ?>').change();
@@ -281,7 +355,65 @@ jQuery.post(
 );
 });
 /* ============== YouTube ========== */
+/* __________________ Header __________________ */
 
+
+/* __________________ Homepage __________________ */
+/* More Post */
+<?php  
+if(strlen($blog_home_page_widgets) > 0){?>
+    $("select.blog_home_page_widgets").val('<?php echo $blog_home_page_widgets;?>').change();
+<?php } ?>
+
+/* More Post */
+$('.blog_home_page_widgets_button').on('click', function(){
+var blog_home_page_widgets = $("select.blog_home_page_widgets").children("option:selected").val();
+
+jQuery.post(
+    ajaxurl,
+    {
+        'action': 'rollback_ajax_blog_home_page_widgets',
+        'data': blog_home_page_widgets
+    }
+);
+});
+/* __________________ Homepage __________________ */
+
+
+/* __________________ Footer __________________ */
+/* Footer Blog Name */
+<?php  
+if(strlen($blog_name_footer_widgets) > 0){?>
+    $("select.blog_name_footer_widgets").val('<?php echo $blog_name_footer_widgets;?>').change();
+<?php } ?>
+
+/* Footer Blog Name */
+$('.blog_name_footer_widgets_button').on('click', function(){
+var blog_name_footer_widgets = $("select.blog_name_footer_widgets").children("option:selected").val();
+
+jQuery.post(
+    ajaxurl,
+    {
+        'action': 'rollback_ajax_blog_name_footer_widgets',
+        'data': blog_name_footer_widgets
+    }
+);
+});
+
+
+/* Footer Copyright */
+$('.rollback_footer_copyright_button').on('click', function(){
+var rollback_footer_copyright = $(".rollback_footer_copyright").val();
+
+jQuery.post(
+    ajaxurl,
+    {
+        'action': 'rollback_ajax_footer_copyright',
+        'data': rollback_footer_copyright
+    }
+);
+});
+/* __________________ Footer __________________ */
 $(document).ready(function(){
     $(".updated_true").focus(function(){
       $(".admin_upload").css("display", "inline").fadeOut(2000);

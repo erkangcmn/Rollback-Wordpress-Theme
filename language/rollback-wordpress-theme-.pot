@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rollback-wordpress-theme 1.0\n"
+"POT-Creation-Date: 2020-02-11 18:32+0300\n"
+"PO-Revision-Date: 2020-02-11 18:33+0300\n"
+"Last-Translator: \n"
+"Language-Team: erkan göçmen\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive.php:24
+msgid "Author page"
+msgstr ""
+
+#: archive.php:27
+msgid "Tag page"
+msgstr ""
+
+#: comments.php:20
+msgid "Save my name, email, and website in this browser for the next time I comment."
+msgstr ""
+
+#: inc/about_me.php:72
+msgid "About Me Title"
+msgstr ""
+
+#: inc/about_me.php:77
+msgid "About Me Detail"
+msgstr ""
+
+#: inc/about_me.php:86
+msgid "About Title:"
+msgstr ""
+
+#: inc/about_me.php:89
+msgid "About Detail:"
+msgstr ""
+
+#: inc/about_me.php:94
+msgid "Image:"
+msgstr ""
+
+#: inc/menus.php:5
+msgid "Header Menu"
+msgstr ""
+
+#: inc/menus.php:6
+msgid "404 Menu"
+msgstr ""
+
+#: inc/menus.php:7
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/menus.php:8
+msgid "Mobil Menu"
+msgstr ""
+
+#: inc/widget.php:17
+msgid "Rollback - Trends"
+msgstr ""
+
+#: inc/widget.php:19
+msgid "Rollback trends views"
+msgstr ""
+
+#: inc/widget.php:64
+msgid "Trends"
+msgstr ""
+
+#: inc/widget.php:68
+msgid "4"
+msgstr ""
+
+#: inc/widget.php:71
+msgid "Title:"
+msgstr ""
+
+#: inc/widget.php:73
+msgid "Trends Number:"
+msgstr ""
+
+#: inc/widget.php:111
+msgid "Rollback - Social Media Ikons"
+msgstr ""
+
+#: inc/widget.php:113
+msgid "Rollback social media views"
+msgstr ""
+
+#: inc/widget.php:179
+msgid "Social Media"
+msgstr ""
+
+#: inc/widget.php:184 inc/widget.php:189 inc/widget.php:194 inc/widget.php:199
+#: inc/widget.php:204 inc/widget.php:209 inc/widget.php:214 inc/widget.php:219
+msgid "#"
+msgstr ""
+
+#: inc/widget.php:223
+msgid "Title"
+msgstr ""
+
+#: inc/widget.php:288
+msgid "Rollback - Search Box"
+msgstr ""
+
+#: inc/widget.php:290
+msgid "Rollback search box"
+msgstr ""
+
+#: inc/widget.php:336
+msgid "Search..."
+msgstr ""
+
+#: inc/widget.php:340
+msgid "Search Value:"
+msgstr ""
+
+#: post-template.php:6
+msgid "Pages:"
+msgstr ""
+
+#: post-template.php:13
+msgid "Next page"
+msgstr ""
+
+#: post-template.php:14
+msgid "Previous page"
+msgstr ""
