@@ -145,11 +145,15 @@ if ( wp_is_mobile() ) {?>
 
 
 
-<?php if(get_option('blog_slogan_widgets') == 'enable'){?>
+<?php if(get_option('blog_slogan_widgets') == 'disable'){
+
+}else{
+  ?>
   <div class="slogan">
     <?php echo get_bloginfo( 'description' ); ?>
   </div>
-<?php }else{} ?>
+<?php 
+} ?>
 
 <!-- =========== Menus ================== -->
 <?php if (function_exists(header_menus())) header_menus(); ?>

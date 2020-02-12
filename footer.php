@@ -2,14 +2,10 @@
 <div class="container">
 <div class="row">
 
-<?php if(get_option('blog_name_footer_widgets') == 'enable'){?>
-<div style="
-width:90%;
-margin:auto;
-display:flex;
-align-items:center;
-justify-content:space-around;
-flex-wrap:wrap">
+<?php if(get_option('blog_name_footer_widgets') == 'disable'){
+
+}else{?>
+<div class="footer_blog_name">
 	<div class="footer_name">
 
 	<a href="<?php esc_url('url'); ?>"><?php echo bloginfo( 'name' ); ?></a>  

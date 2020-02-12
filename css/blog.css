@@ -273,6 +273,14 @@ h2,h3,h4,h5,h6{
     margin-left: 0px; 
     margin-right: 0px;  
 }
+.footer_blog_name{
+    width:90%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap
+}
 
 @media only screen and (max-width: 600px) {
     .card{        
