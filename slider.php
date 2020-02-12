@@ -4,6 +4,7 @@
         <div class="row">
          <div class="col-12" style="width: 900px !important;">
          <?php
+            $i='';
             if(get_option('header_code') == '#' || trim(get_option('header_code')) == ''){}
             else{ $i=get_option('header_code');} 
             echo do_shortcode($i);

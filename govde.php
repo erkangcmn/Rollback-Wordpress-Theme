@@ -22,7 +22,8 @@ if($j == 1){?>
 
       <a href="<?php the_permalink(); ?>">
         <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
-        else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" />
+           else{ echo get_site_url().'/wp-content/themes/rollback-wordpress-theme/img/no_photo.jpg'; }?>" />
+       
       </a>
       <div class="test">
         <span class="fa fa-comment"> 5</span>
@@ -71,7 +72,7 @@ else{
 
     <a href="<?php the_permalink(); ?>">
     <img  class="govde_resim" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url();}
-        else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg'; }?>" />
+           else{ echo get_site_url().'/wp-content/themes/rollback-wordpress-theme/img/no_photo.jpg'; }?>" />
       </a>
       <div class="test">
       <span class="fa fa-comment"> <?php echo get_comments_number(); ?></span>
@@ -99,7 +100,7 @@ else{
 
       <a href="<?php the_permalink(); ?>">
         <img  class="govde_resim_buyuk" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); }
-            else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';}?>"/>
+           else{ echo get_site_url().'/wp-content/themes/rollback-wordpress-theme/img/no_photo.jpg'; }?>" />
         </a>
    
         <div class="test">

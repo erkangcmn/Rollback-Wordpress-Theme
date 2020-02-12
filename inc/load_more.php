@@ -40,7 +40,7 @@ if( have_posts() ) :
 
                 <a href="<?php the_permalink(); ?>">
                     <img  class="govde_resim_buyuk" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); }
-                        else{ echo get_site_url().'/wp-content/themes/wayne/photos/post-image.jpg';}?>"/>
+                          else{ echo get_site_url().'/wp-content/themes/rollback-wordpress-theme/img/no_photo.jpg'; }?>" />
                     </a>
     
                     <div class="test">

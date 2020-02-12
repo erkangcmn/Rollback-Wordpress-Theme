@@ -13,9 +13,9 @@ if (function_exists('register_sidebar')) {
 }
 
 // Register widget
-add_action('widgets_init', 'ctUp_ads_widget');
-function ctUp_ads_widget() {
-    register_widget( 'ctUp_ads' );
+add_action('widgets_init', 'rollback_about_widget');
+function rollback_about_widget() {
+    register_widget( 'rollback_about' );
 }
 
 // Enqueue additional admin scripts
@@ -26,12 +26,18 @@ function ctup_wdscript() {
 }
 
 // Widget
-class ctUp_ads extends WP_Widget {
+class rollback_about extends WP_Widget {
+    function __construct() {
+        parent::__construct(
+        // widget ID
+        'rollback_about',
+        // widget name
+        __('Rollback - About Me', 'rollback-wordpress-theme'),
+        // widget description
+        array( 'description' => __( 'Rollback - About Me', 'rollback-wordpress-theme' ), )
+        );
+        }
 
-    function ctUp_ads() {
-        $widget_ops = array('classname' => 'ctUp-ads');
-        $this->WP_Widget('ctUp-ads-widget', 'Rollback - About Me', $widget_ops);
-    }
 
     function widget($args, $instance) {
     echo $before_widget;

@@ -1,11 +1,11 @@
 <?php
 
 /* ---------------------------------------------------------- Trend yazıları widget --------------------------------------------------*/
-function hstngr_register_widget() {
+function rollback_register_widget() {
 	register_widget( 'rollback_trends' );
 	}
 	
-	add_action( 'widgets_init', 'hstngr_register_widget' );
+	add_action( 'widgets_init', 'rollback_register_widget' );
 	
 	class rollback_trends extends WP_Widget {
 	
@@ -108,7 +108,7 @@ function hstngr_register_widget() {
 		// widget ID
 		'social_media_widget',
 		// widget name
-		__('Rollback - Social Media Ikons', ' rollback-wordpress-theme'),
+		__('Rollback - Social Media Ikons', 'rollback-wordpress-theme'),
 		// widget description
 		array( 'description' => __( 'Rollback social media views', 'rollback-wordpress-theme' ), )
 		);
