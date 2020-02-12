@@ -115,7 +115,7 @@ if ( wp_is_mobile() ) {?>
   <form role="search" action="<?php echo home_url( '/' ); ?>" method="get" style="margin:0px">
     <div id="custom-search-input">
       <div class="input-group">
-        <input type="text" class="search-query form-control"for="s" name="s" placeholder="Search..." />
+        <input type="text" class="search-query form-control" for="s" name="s" placeholder="Search..." />
         <span class="input-group-btn"><button type="submit"><span class="fa fa-search"></span></button></span>
       </div>
     </div>
