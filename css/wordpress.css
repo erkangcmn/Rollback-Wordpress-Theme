@@ -16,6 +16,7 @@ div.aligncenter {
 .alignleft {
     float: left;
     margin: 5px 20px 20px 0;
+    width: 100%;
 }
 
 a img.alignright {

@@ -31,10 +31,11 @@ if($j == 1){?>
         <span class="fa fa-eye"aria-hidden="true"> </span> <?php echo getPostViews(get_the_ID()); ?>
       </div>
       <div class="card-body">
-        <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?> </a></span>
+        <div class="card-title"><div class="govde_baslik_yazi"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div></div>
         <p class="card-text" ><?php
             if ( wp_is_mobile() ) {echo excerpt(10);}
             else{echo excerpt(13);}?></p>
+
       </div>
 
     </div>
@@ -110,11 +111,13 @@ else{
       </div>
 
 
-          <div class="card-body">
-            <span class="card-title"><a href="<?php the_permalink(); ?>"class="govde_baslik"><?php the_title(); ?></a></span>
-            <p class="card-text"><?php 
+      <div class="card-body">
+        <div class="card-title"><div class="govde_baslik_yazi"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div></div>
+        <p class="card-text" ><?php
             if ( wp_is_mobile() ) {echo excerpt(10);}
             else{echo excerpt(30);}?></p>
+
+     
 
           </div>
         </div>

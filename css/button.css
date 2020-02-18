@@ -76,12 +76,12 @@
   color: #f5f5f5;
 }
 .menus-flex{
-  margin: auto;
+  margin-left:10%;
   width: 80%;
   padding:30px;
   display:flex;
   align-items:center;
-  justify-content:space-around;
+  justify-content: center;
   flex-wrap:wrap
 }
 .dropdown-item{

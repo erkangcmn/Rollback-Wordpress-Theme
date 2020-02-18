@@ -49,6 +49,9 @@ text-decoration: none;
 .all-stars {
 animation: blinkblink 7s linear infinite;
 }
+.jumbotron p{
+  text-align: left;
+}
 
 @keyframes blinkblink {  
 50% { opacity: 0.1; }

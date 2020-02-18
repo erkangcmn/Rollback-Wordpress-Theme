@@ -1,4 +1,6 @@
-
+.search-query{
+  font-family: sans-serif;
+}
 .search * {
   outline: none;
   

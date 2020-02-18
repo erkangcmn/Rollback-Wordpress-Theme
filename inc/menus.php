@@ -13,8 +13,10 @@ function register_my_menus() {
   add_action( 'init', 'register_my_menus' );
 
 /*  ------------------ Header Menu ------------------*/
+
 function header_menus() {
 	$menu_name = 'header_menu'; 
+	
 	if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
 		$menu = wp_get_nav_menu_object($locations[$menu_name]);
 		$menu_items = wp_get_nav_menu_items($menu->term_id);
@@ -37,7 +39,7 @@ function header_menus() {
 					$ust_menu = false;
 				}
 				echo"
-				<div class='dropdown' style='text-align:center;margin:auto;padding:20px'>	
+				<div class='dropdown' style='text-align:center;padding:20px'>	
 				<span><a href='$url'class='top_menu'>$title</a></span>
 				<div class='dropdown-content' style='margin-top:5px'>";	
 				$ust_menu = true;

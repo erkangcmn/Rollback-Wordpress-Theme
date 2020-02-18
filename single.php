@@ -59,7 +59,7 @@ else{
 
 
 <div class="footer">
-<div class="row" style="margin-top:30%">
+<div class="row" style="margin-top:5%">
 <?php get_footer(); ?>
 </div>
 </div>
