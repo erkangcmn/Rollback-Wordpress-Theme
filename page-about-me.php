@@ -10,7 +10,7 @@ get_header(); ?>
 
 
 
-      <div class="jumbotron jumbotron-fluid mt-2">
+      <div class="jumbotron jumbotron-fluid mt-5" style="padding:14px 8px 8px 8px;border-radius:8px">
       <div class="container">
       <h2 class="display-4"><?php the_title(); ?></h2>
       <hr>

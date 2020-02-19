@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
@@ -23,12 +23,12 @@
 
 </head>
 <body class="custom-background" <?php body_class(); ?>>
-<?php wp_footer();?>
+
 <div class="ust">
   <div class="contac"> 
     <div class="row">
       <!-- ============= Contac ================== -->
-      <div class="col-sm  d-none d-sm-block"></div>
+      <div class="col-sm  d-none d-md-block"></div>
       <div class="col-1  d-none d-sm-block"><span>|</span></div>
 
       <div class="col-6 col-md-5 col-sm-12 d-none d-md-block d-lg-nonek col-md-1" style="width:100%">

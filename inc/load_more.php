@@ -44,7 +44,7 @@ if( have_posts() ) :
                     </a>
     
                     <div class="test">
-                    <span class="fa fa-comment"> 5</span>
+                     <span class="fa fa-comment"> <?php echo get_comments_number(); ?></span>
                         <span> | </span>
                         <span class="fa fa-eye"aria-hidden="true"> </span> <?php echo getPostViews(get_the_ID()); ?>
                     </div>

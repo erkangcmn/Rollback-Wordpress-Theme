@@ -27,12 +27,11 @@ else{
 </div>
 </div>
 </div>
-
-</body>   
+<?php wp_footer();?>
 <script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/js/jquery-3.4.1.slim.min.js"></script> 
 <script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/js/popper.min.js"></script> 
 <script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/js/bootstrap.min.js"></script> 
 
 <script src="<?php echo get_site_url(); ?>/wp-content/themes/rollback-wordpress-theme/js/govde.js"></script> 
-
+</body>   
 </html>

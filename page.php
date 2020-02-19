@@ -3,7 +3,7 @@ get_header(); ?>
 <div class="site">
 <div class="row">
     <div class="d-none d-sm-block col-md-1"></div>
-    <div class="col-12 col-md-6 col-lg-6" style="float:left">
+    <div class="col-12 col-md-6 col-lg-6 mt-5" style="float:left">
     <?php  while(have_posts()) : the_post();?>
 
 
