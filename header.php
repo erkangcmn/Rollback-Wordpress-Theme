@@ -149,7 +149,7 @@ if ( wp_is_mobile() ) {?>
 
 }else{
   ?>
-  <div class="slogan">
+  <div class="slogan mt-5">
     <?php echo get_bloginfo( 'description' ); ?>
   </div>
 <?php 

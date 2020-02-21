@@ -1,10 +1,10 @@
 === Rollback Blog Theme ===
 Contributors: erkangocmen
 Donate link: #
-Tags: two-columns, right-sidebar, editor-style, minimal, blog-theme, 
-Requires at least: 3.0.1
-Tested up to: 5.2.4
-Stable tag: 1.0
+Tags: two-columns, right-sidebar, editor-style, minimal, blog-theme
+Requires at least: v3.0.1
+Tested up to: v5.2.4
+Stable tag: v1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

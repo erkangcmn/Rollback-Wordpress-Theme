@@ -16,7 +16,7 @@ if ( ! isset( $content_width ) ) {
 //======== Admin menu add ========
 function add_rollback_theme_page(){
 
-	add_theme_page( 'Rollback Admin Page','Rollback Admin','manage_options','rollback_theme_menu_page','rollback_theme_menu_page', 61);
+	add_theme_page( 'Rollback Settings Page','Rollback Settings','manage_options','rollback_theme_menu_page','rollback_theme_menu_page', 61);
 	
 	add_theme_page( 'rollback_theme_menu_page', 'Rollback Admin Page', 'Header Admin Page','manage_options', 'rollback_theme_menu_page');
 }

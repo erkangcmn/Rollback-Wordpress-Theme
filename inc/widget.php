@@ -68,9 +68,9 @@ function rollback_register_widget() {
 	$trends_number = __( '4', 'rollback-wordpress-theme' );
 	?>
 	<p>
-	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php __( 'Title:', 'rollback-wordpress-theme' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'rollback-wordpress-theme' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-	<label for="<?php echo $this->get_field_id( 'trends_number' ); ?>"><?php __( 'Trends Number:', 'rollback-wordpress-theme' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'trends_number' ); ?>"><?php _e( 'Trends Number:', 'rollback-wordpress-theme' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'trends_number' ); ?>" name="<?php echo $this->get_field_name( 'trends_number' ); ?>" type="text" value="<?php echo esc_attr( $trends_number ); ?>" />
 	
 	</p>

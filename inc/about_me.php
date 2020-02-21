@@ -50,7 +50,7 @@ class rollback_about extends WP_Widget {
 			<div class="card about_me" style="margin:auto;height:100%;">
             <img src="<?php echo $image; ?>" style="margin:0;padding:0;width:100%;display:block"/>
                 <div class="card-body">
-					<h5 class="card-title"><?php echo $about_title; ?></h5>
+					<h5 class="card-title">Title: <?php echo $about_title; ?></h5>
 					<p class="card-text"><?php echo $detail; ?></p>
 				</div>
 				</div>
@@ -89,10 +89,10 @@ class rollback_about extends WP_Widget {
 ?>
 	<p>
     <!-- ======About Me Title =====-->
-	<label for="<?php echo $this->get_field_id( 'about_title' ); ?>"><?php __( 'About Title:', 'rollback-wordpress-theme' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'about_title' ); ?>"><?php _e( 'About Title:', 'rollback-wordpress-theme' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'about_title' ); ?>" name="<?php echo $this->get_field_name( 'about_title' ); ?>" type="text" value="<?php echo esc_attr( $about_title ); ?>" />
 	<!-- ======About Me Detail=====-->
-	<label for="<?php echo $this->get_field_id( 'detail' ); ?>"><?php __( 'About Detail:', 'rollback-wordpress-theme' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'detail' ); ?>"><?php _e( 'About Detail:', 'rollback-wordpress-theme' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'detail' ); ?>" name="<?php echo $this->get_field_name( 'detail' ); ?>" type="text" value="<?php echo esc_attr( $detail); ?>" />
 	
 	</p>
